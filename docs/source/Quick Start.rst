@@ -26,6 +26,7 @@ Create
 
 Build
 -----
+
     1. Follow the 'Creating a scene' steps above.
     2. Save the scene.
     3. Open Build Settings window under 'File/Build Settings...'.
@@ -37,6 +38,7 @@ Build
 
 VR
 --
+
     The 8i Unity Plugin fully supports VR rendering.
 
     To enable VR for your Unity Project
