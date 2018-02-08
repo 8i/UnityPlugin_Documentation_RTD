@@ -11,4 +11,5 @@ Contents:
    HvrLight
    HvrColorGrading
    HvrActor3DMask
+   HvrActor3DMaskObject
    Useful Components

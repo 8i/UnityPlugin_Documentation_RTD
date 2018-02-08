@@ -24,24 +24,3 @@ Parameters
 
     Limitations
       - This effect is done in 2D. This means masking out a hand in front of a face will remove the hand, but the face will not be visible. Rotate the camera within the included example scene to see a demonstration of this.
-
-
-HvrActor3DMaskObject
-===============
-
-    Used by HvrActor3DMask to mark areas to be affected when masking a HvrActor
-
-    The mask object can be either a sphere or a box. It can be additive or subtractive.
-
-Parameters
-----------
-
-    **Type**
-      Options
-          - Sphere
-          - Box
-
-    **Addtive**
-      Options
-          - True
-          - False
