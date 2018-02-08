@@ -42,19 +42,4 @@ Building for Android
         
         So far only the Samsung Galaxy Note 5 has been observed with this issue. 
 
-
-Performance
------------
-
-    Performance Tips
-        - Point Count
-            As mobile platforms perform much slower than desktop systems it is recommended that hvr frames with point counts of 600k or less are used, with the recommended point count being around 300k.
-
-        - Rendering Settings
-            It is recommended to use the ‘Direct’ HvrRender render method on Android as it is the best performing renderer.
-
-        - Render Method
-            It is recommended to use the 'Point Sprite' render method in all cases. It is the best performing render method provided.
-            The current alternative, 'Point Blend' does not work on some older devices, and is around twice as expensive to render.
-
     .. __: https://developer.android.com/google/play/expansion-files.html
