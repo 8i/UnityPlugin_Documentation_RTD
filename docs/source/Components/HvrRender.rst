@@ -14,22 +14,15 @@ How to Create
     4. Click 'HvrRender' in the results to add it to the camera
 
 
-Rendering Modes
+Parameters
 ---------------
 
-Standard
-^^^^^^^^
+  **Mode**
 
-    **How it renders**
+    - Standard
+        Renders the scene in multiple passes, where it renders each actor that is visible one by one.
 
-    Renders the scene in multiple passes, where it renders each actor that is visible one by one.
+        This allows for a lot of customization as each HvrActor can have unique shaders and be color-graded individually.
 
-    This allows for a lot of customization as each HvrActor can have unique shaders and be color-graded individually.
-
-
-Direct
-^^^^^^
-
-    **How it renders**
-
-    Rendering the scene in a single pass by rendering directly into the framebuffer.
+    - Direct
+        Renders a actor in a single pass directly into the framebuffer.
