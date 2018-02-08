@@ -7,6 +7,8 @@ Create
     If you are brand new to Unity then there are some excellent tutorials for learning the interface and it’s features here 
     https://unity3d.com/learn/tutorials
 
+    Before beginning, ensure that the HvrActor, HvrRender or HvrLight components are available through the Unity Component Menus. If they are not, check the installation instructions or the Troubleshooting section of this documentation. 
+
     1. Create a new Unity Project.
     2. Add the 8i Unity Plugin into your Unity Project.
     3. Create a new folder within your Unity Project.
@@ -17,13 +19,11 @@ Create
     8. At the bottom of the inspector click 'Add Component' and search for "HvrRender". Click it to add it to the `Main Camera`.
     9. Position the `Main Camera` in front of the HvrActor.
 
-    The HvrActor should now be visible in the Unity Editor Game View. However it may be darker than the surrounding environment as the scene does not contain a HvrLight component to light the actor. In order to light it:
-
-    10. Select the 'Directional Light' object or create it if you don't have one already.
-    11. At the bottom of the inspector click 'Add Component' and search for 'HvrLight'. Click it to add it to the 'Directional Light'.
-
-    If the HvrActor, HvrRender or HvrLight components do not appear in the Unity Menus, double check the installation instructions or the Troubleshooting section of this documentation. 
-
+    .. note::
+        The HvrActor should now be visible in the Unity Editor Game View. However it may be darker than the surrounding environment as the scene does not contain a HvrLight component to light the actor. In order to light it:
+        
+        1. Select the 'Directional Light' object or create it if you don't have one already.
+        2. At the bottom of the inspector click 'Add Component' and search for 'HvrLight'. Click it to add it to the 'Directional Light'.
 
 Build
 -----
@@ -31,7 +31,7 @@ Build
     1. Follow the 'Creating a scene' steps above.
     2. Save the scene.
     3. Open Build Settings window under 'File/Build Settings...'.
-    4. Click the 'Add Open Scenes' button on the right of the window, or drag the scene from the 'Project' window of the Unity Editor.
+    4. Click the 'Add Open Scenes' button on the right of the window, or drag the scene that was just saved from the 'Project' window of the Unity Editor.
     5. Click the 'Build and Run' and follow the onscreen prompts and select your build location.
  
     Unity will now compile the project and create an exe. If it does not, check the Troubleshooting section of this documentation. 
