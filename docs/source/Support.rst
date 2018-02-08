@@ -1,13 +1,13 @@
 Support
 =======
 
-Support Email
--------------
+Community and Support
+---------------------
 
-support@8i.com
+8isupport.zendesk.com
 
 
 Private Community Chat
 ----------------------
 
-8itoolbelt.slack.com (contact us for an invite, if you haven’t received one) - we’ll be monitoring this from our LA and NZ offices over the alpha testing period
+8itoolbelt.slack.com (contact us for an invite, if you haven’t received one)

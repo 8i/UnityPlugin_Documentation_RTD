@@ -9,9 +9,9 @@ Contents:
    About
    Installation
    Quick Start
-   Objects And Components/index
+   Components/index
    Useful Components
-   Example Projects
+   Examples
    Platform Support/index
    Third Party Support/index
    Troubleshooting

@@ -13,7 +13,7 @@ Create
     4. Copy the hvr frames you wish to use into the folder.
     5. Create a `HvrActor` by right clicking in the Hierachy and select '8i/Create HvrActor'
     6. Drag the folder that was created earlier into the 'data' slot on the `HvrActor`.
-    7. Select the `Main Camera` object from the Hierachy
+    7. Select the `Main Camera` object from the Hierachy.
     8. At the bottom of the inspector click 'Add Component' and search for "HvrRender". Click it to add it to the `Main Camera`.
     9. Position the `Main Camera` in front of the HvrActor.
 

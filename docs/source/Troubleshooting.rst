@@ -10,8 +10,8 @@ Improving Performance
         ==================   ==   ==========================
         Resolution           PC   Mobile
         ==================   ==   ==========================
-        1,500,000            ✓    ✖
-        800,000              ✓    ✓ ( High End Required )
+        1,500,000            ✓    ✖ ( Not recommended for Mobile )
+        800,000              ✓    ✓ ( High End Device Required )
         600,000              ✓    ✓ 
         400,000              ✓    ✓ 
         ==================   ==   ==========================
@@ -31,9 +31,9 @@ Improving Performance
         ==================   ================
 
     Change the HvrActor render method
-        It is recommended to use the 'Point Sprite' render method in order to improve performance.
+        It is recommended to use the 'PointSprite' render method in order to improve performance.
         
-        The alternative, 'Point Blend' is around twice as expensive to render.
+        The alternative, 'PointBlend' is around twice as expensive to render.
 
     Change the HvrRender render mode
         The 'Direct' render mode provides the best performance and memory usage.
@@ -75,7 +75,7 @@ Writing Custom HvrActor shaders
             It will look correct, but any transparency would have alpha applied twice.
 
         'Back'
-            Since the mesh that the HvrActor uses is a cube based on the bounds of the HvrAsset, if the camera entered the bounds of the actor, the actor will dissapear as the backfaces of the mesh will not be rendered.
+            Since the mesh is based on the bounds of the HvrActor, if the camera entered the bounds of the actor, the actor will dissapear as the backfaces of the mesh will not be rendered.
 
         'Front'
             Effectively draw onto the backfaces of the mesh and looks as expected.

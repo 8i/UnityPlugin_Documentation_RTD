@@ -7,8 +7,6 @@ Contents:
    :maxdepth: 0
 
    HvrActor
-   HvrActorClone
-   HvrAsset
    HvrRender
    HvrLight
    HvrColorGrading

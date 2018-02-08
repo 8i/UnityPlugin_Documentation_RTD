@@ -7,9 +7,9 @@ Platform Support
 ==================   ============   ==========================   ==========================
 Platform             Architecture   Graphics API                 Unity Editor Support
 ==================   ============   ==========================   ==========================
-Windows              x64            DirectX 11 /OpenGL           ✓ 
-macOS                x64            OpenGL                       ✓
-Linux                x64            OpenGL                       ✓ 
+Windows              x64            DirectX 11 / OpenGLCore      ✓ 
+macOS                x64            OpenGLCore                   ✓
+Linux                x64            OpenGLCore                   ✓ 
 Android              ARMv7          OpenGLES3                    N/A
 iOS                  ARMv7          OpenGLES3                    N/A 
 ==================   ============   ==========================   ==========================

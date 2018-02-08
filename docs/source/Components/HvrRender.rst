@@ -28,7 +28,7 @@ Standard
 
 
 Direct
-^^^^^^^^
+^^^^^^
 
     **How it renders**
 
