@@ -4,7 +4,6 @@ Components
 Contents:
 
 .. toctree::
-   :maxdepth: 0
 
    HvrActor
    HvrRender
