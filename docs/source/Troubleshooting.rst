@@ -40,6 +40,7 @@ Improving Performance
         
         There are downsides of this method which are outlined in the HvrRender section of this documentation.
 
+
 HVR Actors are not rendering
 ----------------------------
 
@@ -64,6 +65,7 @@ HVR Actors are not rendering
 
         Until this is fixed within Unity, it is recommend to copy the AndroidManifest file from this location `8i/core/platform support/android/plugins/AndroidManifest.xml` to `project_name/Assets/Plugins/Android/AndroidManifest.xml`
 
+
 Writing Custom HvrActor shaders
 ----------------------------
     When using the 'Standard' rendering mode for HrvActors, there is a slot where a material may be assigned.
@@ -80,6 +82,7 @@ Writing Custom HvrActor shaders
         'Front'
             Effectively draw onto the backfaces of the mesh and looks as expected.
 
+
 Rendering Issues when using VR
 ------------------------------
 
@@ -87,6 +90,7 @@ Rendering Issues when using VR
 
     Fix:
         Go to build QualitySettings 'Edit/Project Settings/Quality and make sure that all Quality Settings have the 'V Sync count' option set to 'Don't Sync'.
+
 
 Cannot create HvrActor
 ----------------------

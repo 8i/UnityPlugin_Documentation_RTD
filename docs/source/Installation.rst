@@ -6,13 +6,14 @@ Download
 
     The 8i Unity Plugin can be downloaded from https://8i.com/developers/unity/
 
+
 Install
 -------
 
     1. Ensure you have Unity 5.4.0 or greater installed
     2. Create a new Unity Project
     3. Extract the ‘8i’ folder from the plugin zip file into your project
-
+  
   
 Update
 ------

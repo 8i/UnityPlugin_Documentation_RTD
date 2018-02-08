@@ -1,5 +1,5 @@
-Objects and Components
-=============================
+Components
+==========
 
 Contents:
 
@@ -11,3 +11,4 @@ Contents:
    HvrLight
    HvrColorGrading
    HvrActor3DMask
+   Useful Components

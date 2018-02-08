@@ -24,6 +24,7 @@ Create
 
     If the HvrActor, HvrRender or HvrLight components do not appear in the Unity Menus, double check the installation instructions or the Troubleshooting section of this documentation. 
 
+
 Build
 -----
 

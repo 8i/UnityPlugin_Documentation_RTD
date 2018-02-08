@@ -10,7 +10,6 @@ Contents:
    Installation
    Quick Start
    Components/index
-   Useful Components
    Examples
    Platform Support/index
    Third Party Support/index
