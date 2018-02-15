@@ -4,13 +4,16 @@ Cinema Director
 Cinema Director is a third party plugin for Unity. It is a powerful tool for creating cutscenes within Unity.
 It is available on the Unity Asset Store for purchase.
 
-Links
+**Links**
+
 `Website <http://cinema-suite.com/>`_.
+
 `Unity Store <https://www.assetstore.unity3d.com/en/#!/content/19779>`_.
 
 **Download**
 
 8iUnityPlugin 0.4.2f1
+
 * CinemaDirector 1.4.5.2 `Download <https://drive.google.com/open?id=0B2RPRDuZy4rIejdFRURrRDhETm8>`_
 
 **Installation**
