@@ -10,7 +10,7 @@ Building for Android
 
     Android is similar to desktop systems in that .hvr files are read from disk when being used to play a HvrActor. The Unity Plugin provides support to export .hvr data using an OBB file, and then unpack this data into the correct location within the app's internal storage. 
 
-    Hvr data cannot be read from disk while packed in the OBB. They need to be unpacked and written to the app's internal storage. The Unity Plugin provides a helper scene which does this. The scene is called "HvrUnpackingScene", and can be found under "8i/core/platform support/android/scenes/". By making this scene the first scene in the editor build settings (i.e. it will be launched when the app is launched), it will automatically unpack the assets, and then load the next scene.
+    Hvr data cannot be read from disk while packed in the OBB. They need to be unpacked and written to the app's internal storage. The Unity Plugin provides a helper scene which does this. The scene is called "HvrUnpackingScene", and can be found under "8i/core/interface/platforms/android/scenes/". By making this scene the first scene in the editor build settings (i.e. it will be launched when the app is launched), it will automatically unpack the assets, and then load the next scene.
 
     "HvrUnpackingScene" uses the "LoadingSceneManager" class to unpack the data from the built OBB file. This class can be easily modified if any project specific changes are required.
 
