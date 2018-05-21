@@ -38,7 +38,7 @@ Building for Android
         In order to build succesfully with .hvr files in the project, this option must be turned on.  
 
     .. note::
-        Some devices do not seem to correctly allow the OBB file to be copied to the device when using the "Build and Run" option in Unity, and in some cases will silently fail to update the OBB when the project is built. If this occurs, the OBB file will need to be manually copied to the development device.
+        Some devices do correctly allow the OBB file to be copied to the device when using the "Build and Run" option in Unity, and in some cases will silently fail to update the OBB when the project is built. If this occurs, the OBB file will need to be manually copied to the development device.
         
         So far only the Samsung Galaxy Note 5 has been observed with this issue. 
 

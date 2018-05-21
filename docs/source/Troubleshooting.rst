@@ -31,10 +31,8 @@ Improving Performance
         ==================   ================
 
     Change the HvrActor render method
-        It is recommended to use the 'PointSprite' render method in order to improve performance.
+        It is recommended to use the 'FastCubes' render method in order to improve performance.
         
-        The alternative, 'PointBlend' is around twice as expensive to render.
-
     Change the HvrRender render mode
         The 'Direct' render mode provides the best performance and memory usage.
         
@@ -67,7 +65,7 @@ HVR Actors are not rendering
             Make sure that under the PlayerSettings that the targeting GraphicsAPI is GLES3 and that your device supports GLES3.
         
         HvrActors using PointBlend are not rendering.
-            The PointBlend render method does not work on some older mobile devices. It is recommended to use PointSprite for Mobile apps.
+            The PointBlend render method does not work on some older mobile devices.
 
         HvrRender fails to load Standard shaders
             There is a known issue that on some devices, that when the 'Split Application Binary' option is enabled, the HvrRender component may not be able to load the Standard shaders. Go to 'Edit/Project Settings/Player' and make sure that the option 'Split Application Binary' is not checked.
@@ -112,4 +110,4 @@ Cannot create HvrActor
     Possible Fixes:
         - Check that the plugin was fully extracted from the '8i Unity Plugin'.
         - Make sure the Unity version is compatible with this version of the plugin.
-        - Check the console to see whether there are any errors blocking Unity from compiling.
+        - Check the console to see whether there are any errors blocking Unity from compiling the plugin.
