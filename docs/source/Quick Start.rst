@@ -4,7 +4,7 @@ Quick Start
 Create
 ------
 
-    If you are brand new to Unity then there are some excellent tutorials for learning the interface and it’s features here 
+    If you are new to Unity then there are some excellent tutorials for learning the interface and it’s features here 
     https://unity3d.com/learn/tutorials
 
     Before beginning, ensure that the HvrActor, HvrRender or HvrLight components are available through the Unity Component Menus. If they are not, check the installation instructions or the Troubleshooting section of this documentation. 

@@ -15,8 +15,9 @@ How to Create
     2. Below the HVRActor component click the 'Add Component' and search for 'HvrShaderSubroutine_Simple'
     3. Add it by highlighting it in the 'Add Component' window and pressing Enter, or clicking it.
 
-Writing a ShaderSubroutine shader
----------------------------------
+
+What is a ShaderSubroutine?
+---------------------------
 
     Unlike Unity's ShaderLab shaders, ShaderSubroutines are not automatically converted to work for every BuildTarget. ShaderSubroutines must be written for each Grahpics API that the effect needs to work on. 
 
@@ -37,6 +38,7 @@ Writing a ShaderSubroutine shader
     For example
 
     .. code-block:: none
+
         BEGIN_GLSL_VERTEX
             # Code
         END_GLSL_VERTEX

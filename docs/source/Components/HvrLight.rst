@@ -17,7 +17,5 @@ How to Create
 
 Limitations
 -----------
-	* HvrLights under directional light will not be able to cast shadows
 	* HvrLights under point light will have shadow artifacts prior to Unity 5.6
 	* Some mobile devices will have limited shadow casting abilities
-	* HvrActors receive shadows from other objects will not have soft-edged shadows

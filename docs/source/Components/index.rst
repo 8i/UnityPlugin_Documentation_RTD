@@ -4,12 +4,15 @@ Components
 Contents:
 
 .. toctree::
+   :maxdepth: 0
 
    HvrActor
    HvrRender
    HvrLight
    HvrColorGrading
-   HvrShaderSubroutine
+   HvrShaderSubroutines
    HvrActor3DMask
-   HvrActor3DMaskObject
-   Useful Components
+   HvrActorAnimationSync
+   HvrActorAudioSourceSync
+   HvrActorProjectorShadow
+   TriggerHvrActor
