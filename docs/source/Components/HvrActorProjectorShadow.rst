@@ -1,12 +1,17 @@
 HvrActorProjectorShadow
-=======================
+============================================================
 
     Can be used in conjunction with a Projector component to project a texture onto a surface based on the bounds of an HvrActor. This is useful for creating blob shadows.
 
-How to Create
--------------
+Parameters
+------------------------------------------------------------
 
-    1. Select (or create) a Unity GameObject
-    2. Click on ‘Add Component’ in the inspector
-    3. Go to ‘8i/HvrActorProjectorShadow’
-    4. Slot the HvrActor and Audiosource into the component. From now on the audio source will match the playback time of the HvrActor.
+    +-----------------+-----------+---------------------------------------------------------------------------------------------------------------+
+    | Parameter       | Type      | Function                                                                                                      |
+    +-----------------+-----------+---------------------------------------------------------------------------------------------------------------+
+    | Actor           | HvrActor  | The HvrActor which has an Asset. The bounds of this Asset will be used to drive the Projector components size |
+    +-----------------+-----------+---------------------------------------------------------------------------------------------------------------+
+    | Projector       | Projector | The Projector Component which will cast a blob shadow texture                                                 |
+    +-----------------+-----------+---------------------------------------------------------------------------------------------------------------+
+    | Size Multiplier | Float     | Used to increase or decrease the scale of the blob shadow texture                                             |
+    +-----------------+-----------+---------------------------------------------------------------------------------------------------------------+

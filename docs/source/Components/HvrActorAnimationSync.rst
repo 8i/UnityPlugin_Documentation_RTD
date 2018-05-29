@@ -1,4 +1,16 @@
 HvrActorAnimationSync
-=====================
+============================================================
 
-    By attaching this component to a GameObject that has a Collider and assigning a HvrActor, the HvrActor will begin playing when the Collider is hit by any collidable object.
+    This component allows a Animation clip to be synced with a HvrActor's Asset.
+
+
+Parameters
+------------------------------------------------------------
+
+    +-----------------+-----------+--------------------------------------------------------------------+
+    | Parameter       | Type      | Function                                                           |
+    +-----------------+-----------+--------------------------------------------------------------------+
+    | HvrActor        | HvrActor  | A HvrActor which has a Asset                                       |
+    +-----------------+-----------+--------------------------------------------------------------------+
+    | TargetAnimation | Animation | A Animation component which will be synced to the HvrActor's Asset |
+    +-----------------+-----------+--------------------------------------------------------------------+

@@ -1,18 +1,33 @@
-Components
-==========
+Objects and Components
+============================================================
 
-Contents:
+   All components included in this plugin can be found within the 'Component' menu at the top of the Unity Editor window, or in the 'Add Component' menu on any GameObject.
+
+   Unity's manual demonstrates how components are used: https://docs.unity3d.com/Manual/UsingComponents.html
+
+Components
+------------------------------------------------------------
+
+Main Components
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. toctree::
-   :maxdepth: 0
+   :titlesonly:
 
    HvrActor
-   HvrRender
    HvrLight
-   HvrColorGrading
-   HvrShaderSubroutines
+   HvrRender
+
+Effects and Utility Components
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. toctree::
+   :titlesonly:
+
    HvrActor3DMask
    HvrActorAnimationSync
    HvrActorAudioSourceSync
    HvrActorProjectorShadow
-   TriggerHvrActor
+   HvrActorTrigger
+   HvrColorGrading
+   HvrShaderSubroutine

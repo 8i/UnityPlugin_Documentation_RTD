@@ -12,7 +12,7 @@ Example Projects
 ----------------
 
     Custom Shaders
-    ^^^^^^^^^^^^^^
+    ~~~~~~~~~~~~~~~~~~~~~~
 
         This example project demonstrates how to write and use shaders to apply custom effects to HvrActor rendering.
 
@@ -29,7 +29,7 @@ Example Projects
         6. `Example Video 4 (Distortion) <https://drive.google.com/open?id=0B2RPRDuZy4rIenBlYXkyZExIUFU>`_
 
     Using LightProbes to Light HvrActors
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ~~~~~~~~~~~~~~~~~~~~~~
 
         This example shows how to sample Unity LightProbes and affect HvrActors to give the apperance of realtime lighting.
 

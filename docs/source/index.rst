@@ -4,14 +4,14 @@
 Contents:
 
 .. toctree::
-   :maxdepth: 1
+   :titlesonly:
+   :maxdepth: 1 
 
    About
    Installation
    Quick Start
    Components/index
-   Examples
    Platform Support/index
-   Third Party Support/index
+   Examples
    Troubleshooting
    Support

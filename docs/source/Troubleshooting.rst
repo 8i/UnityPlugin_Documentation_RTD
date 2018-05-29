@@ -5,6 +5,8 @@ Improving Performance
 ---------------------
 
     Use lower resolution data
+    ~~~~~~~~~~~~~~~~~~~~~~
+
         It is recommended using this table when choosing which resolution to use for your application.
 
         ==================   ==   ==========================
@@ -31,15 +33,19 @@ Improving Performance
         ==================   ================
 
     Change the HvrActor render method
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         It is recommended to use the 'FastCubes' render method in order to improve performance.
-        
+
+
     Change the HvrRender render mode
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         The 'Direct' render mode provides the best performance and memory usage.
         
         There are downsides of this method which are outlined in the HvrRender section of this documentation.
 
-    For Mobile
-    ^^^^^^^^^^
+
+    FMobile
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     
         - Point Count
             As mobile platforms perform much slower than desktop systems it is recommended that hvr frames with point counts of 600k or less are used, with the recommended point count being around 300k.
@@ -52,62 +58,49 @@ Improving Performance
             The current alternative, 'Point Blend' does not work on some older devices, and is around twice as expensive to render.
 
 
-
 HVR Actors are not rendering
 ----------------------------
 
-    Windows
-        The Graphics API may not be supported.
-            Go to 'Edit/Project Settings/Player' and make sure that the PlayerSettings 'Graphics API for Windows' is set to either DirectX11 or OpenGL2. These are the only supported graphics APIs at this time.
+    Common
+    ~~~~~~~~~~~~~~~~~~~~~~
+
+    *Main camera does not have a HvrRender component attached*
+        A common mistake is to not attach a HvrRender component to the main rendering camera in the scene
 
     Android
-        The Graphics API may not be supported.
+    ~~~~~~~~~~~~~~~~~~~~~~
+        *The Graphics API may not be supported*
             Make sure that under the PlayerSettings that the targeting GraphicsAPI is GLES3 and that your device supports GLES3.
-        
-        HvrActors using PointBlend are not rendering.
+
+        *HvrActors using PointBlend are not rendering*
             The PointBlend render method does not work on some older mobile devices.
 
-        HvrRender fails to load Standard shaders
+        *HvrRender fails to load Standard shaders*
             There is a known issue that on some devices, that when the 'Split Application Binary' option is enabled, the HvrRender component may not be able to load the Standard shaders. Go to 'Edit/Project Settings/Player' and make sure that the option 'Split Application Binary' is not checked.
 
-    Android - DayDream
-        The current release of the Unity Editor for DayDream ( 5.4.2f2-GVR13 ), will not use the AndroidManifest.xml file that is provided within the plugin. This means the hvr frames will not be extracted or read from the devices storage upon installing the build.
+        *Issues with Google Daydream builds*
+            The current release of the Unity Editor for DayDream ( 5.4.2f2-GVR13 ), will not use the AndroidManifest.xml file that is provided within the plugin. This means the hvr frames will not be extracted or read from the devices storage upon installing the build.
 
-        It appears as though this build of the Unity Editor has a bug where it will not use and AndroidManifest.xml file that is not located at this specific location `project_name/Assets/Plugins/Android/AndroidManifest.xml`
+            It appears as though this build of the Unity Editor has a bug where it will not use and AndroidManifest.xml file that is not located at this specific location `project_name/Assets/Plugins/Android/AndroidManifest.xml`
 
-        Until this is fixed within Unity, it is recommend to copy the AndroidManifest file from this location `8i/core/platform support/android/plugins/AndroidManifest.xml` to `project_name/Assets/Plugins/Android/AndroidManifest.xml`
+            Until this is fixed within Unity, it is recommend to copy the AndroidManifest file from this location `8i/core/platform support/android/plugins/AndroidManifest.xml` to `project_name/Assets/Plugins/Android/AndroidManifest.xml`
 
 
-Writing Custom HvrActor shaders
+
+Cannot create Hvr components
 ----------------------------
-    When using the 'Standard' rendering mode for HrvActors, there is a slot where a material may be assigned.
-    
-    When writing custom shaders, you should make sure your 'Cull' shader parameter is set to 'Front'.
-    
-    **Culling Settings**
-        'Off'
-            It will look correct, but any transparency would have alpha applied twice.
-
-        'Back'
-            Since the mesh is based on the bounds of the HvrActor, if the camera entered the bounds of the actor, the actor will dissapear as the backfaces of the mesh will not be rendered.
-
-        'Front'
-            Effectively draw onto the backfaces of the mesh and looks as expected.
-
-
-Rendering Issues when using VR
-------------------------------
-
-    If when using a Vive, if the actors do not render or there is a upside down and white copy of the world visible in the headset the issue may be VSync being enabled.
-
-    Fix:
-        Go to build QualitySettings 'Edit/Project Settings/Quality and make sure that all Quality Settings have the 'V Sync count' option set to 'Don't Sync'.
-
-
-Cannot create HvrActor
-----------------------
 
     Possible Fixes:
-        - Check that the plugin was fully extracted from the '8i Unity Plugin'.
+        - Check that the plugin was fully extracted from the '8i Unity Plugin' zip.
+        - If you recently updated the plugin, make sure that you closed the Unity Editor adding the new plugin folder to your project. The Unity Editor can lock the native binaries included in the plugin and block you from writing over them.
         - Make sure the Unity version is compatible with this version of the plugin.
         - Check the console to see whether there are any errors blocking Unity from compiling the plugin.
+
+
+Android build failing to extract frames from OBB
+------------------------------------------------
+
+    Some devices do correctly allow the OBB file to be copied to the device when using the "Build and Run" option in Unity, and in some cases will silently fail to update the OBB when the project is built. If this occurs, the OBB file will need to be manually copied to the development device.
+    
+    So far only the Samsung Galaxy Note 5 has been observed with this issue. 
+

@@ -1,8 +1,8 @@
 Quick Start
 ===========
 
-Create
-------
+Creating a simple scene
+-----------------------
 
     If you are new to Unity then there are some excellent tutorials for learning the interface and it’s features here 
     https://unity3d.com/learn/tutorials
@@ -14,7 +14,7 @@ Create
     3. Create a new folder within your Unity Project.
     4. Copy the hvr frames you wish to use into the folder.
     5. Create a `HvrActor` by right clicking in the Hierachy and select '8i/Create HvrActor'
-    6. Drag the folder that was created earlier into the 'data' slot on the `HvrActor`.
+    6. Drag the folder that was created earlier into the 'reference' slot on the `HvrActor`.
     7. Select the `Main Camera` object from the Hierachy.
     8. At the bottom of the inspector click 'Add Component' and search for "HvrRender". Click it to add it to the `Main Camera`.
     9. Position the `Main Camera` in front of the HvrActor.
@@ -25,8 +25,8 @@ Create
         1. Select the 'Directional Light' object or create it if you don't have one already.
         2. At the bottom of the inspector click 'Add Component' and search for 'HvrLight'. Click it to add it to the 'Directional Light'.
 
-Build
------
+Creating a build
+----------------
 
     1. Follow the 'Creating a scene' steps above.
     2. Save the scene.
@@ -37,8 +37,8 @@ Build
     Unity will now compile the project and create an exe. If it does not, check the Troubleshooting section of this documentation. 
 
 
-VR
---
+Building for VR
+---------------
 
     The 8i Unity Plugin fully supports VR rendering.
 

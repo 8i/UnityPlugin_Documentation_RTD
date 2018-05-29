@@ -1,5 +1,5 @@
 HvrActor3DMask
-===============
+============================================================
 
     This components allows you to mask sections of an HvrActor.
 
@@ -10,48 +10,32 @@ HvrActor3DMask
     .. note::
         This effect is done in 2D. This means masking out a hand in front of a face will remove the hand, but the face will not be visible. Rotate the camera within the included example scene to see a demonstration of this.
 
-How to Create
--------------
-
-      1. Attach a HvrActor3DMask component to the HvrActor you wish to mask.
-      2. Create a new GameObject.
-      3. Attach a HvrActor3DMaskObject to the new GameObject.
-      4. Add the HvrActor3DMaskObject to the 'objects' array on the HvrActor3DMask.
-      5. Position and scale the HvrActor3DMaskObject so it covers a section of the HvrActor.
-      6. The HvrActor will now no longer be visible within the volume of the HrvActor3DMaskObject.
-
 Parameters
-----------
+------------------------------------------------------------
 
-+-----------+-------+----------------------------------------------+
-| Parameter | Type  | Function                                     |
-+-----------+-------+----------------------------------------------+
-| Objects   | Array | An array of HvrActor3DMaskObject components. |
-+-----------+-------+----------------------------------------------+
+    +-----------+-------+----------------------------------------------+
+    | Parameter | Type  | Function                                     |
+    +-----------+-------+----------------------------------------------+
+    | Objects   | Array | An array of HvrActor3DMaskObject components. |
+    +-----------+-------+----------------------------------------------+
 
 
 HvrActor3DMaskObject
-====================
+============================================================
 
     Used by HvrActor3DMask to mark areas to be affected when masking a HvrActor
 
     The mask object can be either a sphere or a box. It can be additive or subtractive.
 
-How to Create
--------------
-
-      1. Create a new GameObject.
-      2. Attach a HvrActor3DMaskObject to the new GameObject.
-
 Parameters
-----------
+------------------------------------------------------------
 
-+----------+--------+---------------------------------------+
-| Property | Type   | Function                              |
-+----------+--------+---------------------------------------+
-| Options  | Sphere | Mask using a sphere                   |
-+----------+--------+---------------------------------------+
-|          | Box    | Mask using a cube                     |
-+----------+--------+---------------------------------------+
-| Additive | Bool   | Is this mask additive or subtractive? |
-+----------+--------+---------------------------------------+
+    +----------+--------+---------------------------------------+
+    | Property | Type   | Function                              |
+    +----------+--------+---------------------------------------+
+    | Options  | Sphere | Mask using a sphere                   |
+    +----------+--------+---------------------------------------+
+    |          | Box    | Mask using a cube                     |
+    +----------+--------+---------------------------------------+
+    | Additive | Bool   | Is this mask additive or subtractive? |
+    +----------+--------+---------------------------------------+

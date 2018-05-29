@@ -4,7 +4,10 @@ Platform Support
 Contents:
 
 .. toctree::
-   :maxdepth: 0
+   :titlesonly:
 
    Android
    iOS
+   Linux
+   MacOS
+   Windows

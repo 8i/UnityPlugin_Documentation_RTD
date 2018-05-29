@@ -1,28 +1,23 @@
 HvrRender
-===========
+============================================================
 
     In order to render HvrActors a HvrRender component must be attached to a Camera.
 
     There are three different render modes that the HvrRender component can be set to. While Standard is the default and recommended mode, there are two others which each have different properties and performance costs.
-
-How to Create
--------------
-
-    1. Select the main rendering camera in the scene
-    2. In the Inspector click 'Add Component'
-    3. Type in HvrRender into the search box
-    4. Click 'HvrRender' in the results to add it to the camera
-
+        
 
 Parameters
----------------
+------------------------------------------------------------
 
-  **Mode**
++-----------+----------+-----------------------------------------------------------------------------------------------------+
+| Parameter | Type     | Function                                                                                            |
++-----------+----------+-----------------------------------------------------------------------------------------------------+
+| Mode      | Standard | Renders each HvrActor individually within Unity's render loop                                       |
+|           |          | This allows for custom materials and effects to affect how an HvrActor is rendered                  |
++-----------+----------+-----------------------------------------------------------------------------------------------------+
+|           | Direct   | Renders directly into Unity's framebuffer                                                           |
+|           |          | Using this option will ignore all custom materials and effects that are currently set on a HvrActor |
++-----------+----------+-----------------------------------------------------------------------------------------------------+
 
-    - Standard
-        Renders the scene in multiple passes, where it renders each actor that is visible one by one.
-
-        This allows for a lot of customization as each HvrActor can have unique shaders and be color-graded individually.
-
-    - Direct
-        Renders a actor in a single pass directly into the framebuffer.
+    .. note::
+        ShaderSubroutines effects are compatible with both Standard and 'Direct' mode.
