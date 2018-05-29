@@ -8,7 +8,8 @@ This documentation is a work in progress, and some details may change during dev
 Support
 ------------------------------------------------------------
 
-**Supported Unity Versions**
+Supported Unity Versions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - 5.4
 - 5.5
@@ -16,7 +17,8 @@ Support
 - 2017
 - 2018
 
-**Support Platforms, Architectures and Graphics APIS**
+Supported Platforms, Architectures and Graphics APIS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ==================   ============   ==========================
 Platform             Architecture   Graphics API              
