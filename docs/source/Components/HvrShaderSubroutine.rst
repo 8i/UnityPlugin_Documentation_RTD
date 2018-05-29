@@ -12,7 +12,7 @@ This component allows custom shaders to affect the HvrActor during the native pl
 Writing ShaderSubroutines
 ------------------------------------------------------------
 
-Unlike Unity's ShaderLab shaders, ShaderSubroutines are not automatically converted to work for every BuildTarget. ShaderSubroutines must be written for each Grahpics API that the effect needs to work on. 
+Unlike Unity's ShaderLab shaders, ShaderSubroutines are not automatically converted to work for every BuildTarget. ShaderSubroutines must be written for each Graphics API that the effect needs to work on. 
 
 The current supported shader languages are GLSL, HLSL and Metal.
 
@@ -28,7 +28,7 @@ Metal                METAL
 Code Blocks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For convinience, a single ShaderSubroutine Shader can contain all of the different languages. When the shader is loaded it will only compile the relevant sections.
+For convenience, a single ShaderSubroutine Shader can contain all of the different languages. When the shader is loaded it will only compile the relevant sections.
 
 BEGIN and END lines are used to specify a block of code for different languages
 
@@ -85,11 +85,11 @@ Custom parameters and methods
 
 In order to support ShaderSubroutine Stacks, it is required to prefix all custom parameters and methods with "<ID>" (Without the quote marks).
 
-This is neccessary because when a ShaderSubroutine Stack is created all of the shaders in the stack are compiled into one large shader. If more than one of those shaders has a parameter with the same name, the parameter's value will not be able to be set differently for each shader. For example, if two shaders had the parameter "colour".
+This is necessary because when a ShaderSubroutine Stack is created all of the shaders in the stack are compiled into one large shader. If more than one of those shaders has a parameter with the same name, the parameter's value will not be able to be set differently for each shader. For example, if two shaders had the parameter "colour".
 
 In order to address this, a unique ID is generated for each ShaderSubroutine and is used when the ShaderSubroutine Stack is created. This ID is used to replace the "<ID>" prefix and ensures that each shader has unique parameter and method names;
 
-This example demonstrates how to write a shader which is compatbile with ShaderSubroutine Stacks.
+This example demonstrates how to write a shader which is compatible with ShaderSubroutine Stacks.
 
 .. code-block:: none
 
@@ -185,7 +185,7 @@ Offset the position of all vertices vertically
 Example 3
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The following sets the colourr of all voxels to be blue, and sets their scale to 0 if they are below 1m in the data's object space.
+The following sets the color of all voxels to be blue, and sets their scale to 0 if they are below 1m in the data's object space.
 
 .. code-block:: none
 
