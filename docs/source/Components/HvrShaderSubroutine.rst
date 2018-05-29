@@ -34,19 +34,19 @@ BEGIN and END lines are used to specify a block of code for different languages
 
 For example
 
-    .. code-block:: none
+.. code-block:: none
 
-        BEGIN_GLSL_VERTEX
-            # Code
-        END_GLSL_VERTEX
+    BEGIN_GLSL_VERTEX
+        # Code
+    END_GLSL_VERTEX
 
-        BEGIN_HLSL_VERTEX
-            # Code
-        END_HLSL_VERTEX
+    BEGIN_HLSL_VERTEX
+        # Code
+    END_HLSL_VERTEX
 
-        BEGIN_METAL_VERTEX
-            # Code
-        END_METAL_VERTEX
+    BEGIN_METAL_VERTEX
+        # Code
+    END_METAL_VERTEX
 
 Control Functions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

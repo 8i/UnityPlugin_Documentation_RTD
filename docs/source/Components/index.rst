@@ -1,9 +1,9 @@
 Objects and Components
 ============================================================
 
-   All components included in this plugin can be found within the 'Component' menu at the top of the Unity Editor window, or in the 'Add Component' menu on any GameObject.
+All components included in this plugin can be found within the 'Component' menu at the top of the Unity Editor window, or in the 'Add Component' menu on any GameObject.
 
-   Unity's manual demonstrates how components are used: https://docs.unity3d.com/Manual/UsingComponents.html
+Unity's manual demonstrates how components are used: https://docs.unity3d.com/Manual/UsingComponents.html
 
 Components
 ------------------------------------------------------------

@@ -9,5 +9,5 @@ HvrLight enables HvrActors to be lit by Unity Lights.
 Limitations
 ------------------------------------------------------------
 
-    * HvrLights under point light will have shadow artifacts prior to Unity 5.6
-    * Some mobile devices will have limited shadow casting abilities
+* HvrLights under point light will have shadow artifacts prior to Unity 5.6
+* Some mobile devices will have limited shadow casting abilities

@@ -1,37 +1,37 @@
 About
-=====
+============================================================
 
-	Documentation for the BETA release of 8i Unity Plugin 0.6.0.
+Documentation for the BETA release of 8i Unity Plugin 0.6.0.
 
-	This documentation is a work in progress, and some details may change during development.
+This documentation is a work in progress, and some details may change during development.
 
 Support
--------
+------------------------------------------------------------
 
-	**Supported Unity Versions**
+**Supported Unity Versions**
 
-	    - 5.4
-	    - 5.5
-	    - 5.6
-	    - 2017
-	    - 2018
+- 5.4
+- 5.5
+- 5.6
+- 2017
+- 2018
 
-	**Support Platforms, Architectures and Graphics APIS**
+**Support Platforms, Architectures and Graphics APIS**
 
-	==================   ============   ==========================
-	Platform             Architecture   Graphics API              
-	==================   ============   ==========================
-	Windows              x64            DirectX 11 / OpenGLCore   
-	macOS                x64            OpenGLCore                
-	Linux                x64            OpenGLCore                
-	Android              ARMv7          OpenGLES3                 
-	iOS                  ARMv7          OpenGLES3 / Metal         
-	==================   ============   ==========================
+==================   ============   ==========================
+Platform             Architecture   Graphics API              
+==================   ============   ==========================
+Windows              x64            DirectX 11 / OpenGLCore   
+macOS                x64            OpenGLCore                
+Linux                x64            OpenGLCore                
+Android              ARMv7          OpenGLES3                 
+iOS                  ARMv7          OpenGLES3 / Metal         
+==================   ============   ==========================
 
-    .. note::
-        For more details on each platform see the individual pages in Platform Support
+.. note::
+    For more details on each platform see the individual pages in Platform Support
 
 Hardware Requirements
----------------------
+------------------------------------------------------------
 
-	The full list of hardware requirements can be found here: `Requirements <https://drive.google.com/open?id=1kXDNg3hW7iKWFLR4SrQZykFQvrHJFYE-zu8xasTea3M>`_
+The full list of hardware requirements can be found here: `Requirements <https://drive.google.com/open?id=1kXDNg3hW7iKWFLR4SrQZykFQvrHJFYE-zu8xasTea3M>`_
