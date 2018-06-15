@@ -12,17 +12,17 @@ This component allows custom shaders to affect the HvrActor during the native pl
 Writing ShaderSubroutines
 ------------------------------------------------------------
 
-Unlike Unity's ShaderLab shaders, ShaderSubroutines are not automatically converted to work for every BuildTarget. ShaderSubroutines must be written for each Graphics API that the effect needs to work on. 
+Unlike Unity's ShaderLab shaders, ShaderSubroutines are not automatically converted to work for every BuildTarget. ShaderSubroutines must be written for each Graphics API that the effect needs to work on.
 
 The current supported shader languages are GLSL, HLSL and Metal.
 
 ==================   ===============
 Graphics API         Shader Language
 ==================   ===============
-Direct3D11           GLSL
-OpenGLCore           HLSL         
-OpenGLES3            HLSL        
-Metal                METAL
+Direct3D11           HLSL
+OpenGLCore           GLSL
+OpenGLES3            GLSL
+Metal                Metal Shading Language
 ==================   ===============
 
 Code Blocks
