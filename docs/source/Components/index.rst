@@ -15,8 +15,8 @@ Main Components
    :titlesonly:
 
    HvrActor
-   HvrLight
    HvrRender
+   HvrLight
 
 Effects and Utility Components
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
