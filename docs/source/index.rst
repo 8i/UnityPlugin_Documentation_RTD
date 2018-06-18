@@ -12,6 +12,5 @@ Contents:
    Quick Start
    Components/index
    Platform Support/index
-   Examples
    Troubleshooting
    Support
