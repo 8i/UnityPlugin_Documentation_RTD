@@ -1,12 +1,10 @@
 8i Unity Plugin Documentation
 ============================================================
 
-About
-------------------------------------------------------------
-
 The 8i Unity Plugin allows developers to add 8i’s fully volumetric video to any Unity experience. It’s like embedding traditional 2D video content, except you get to walk around ours as it plays!
 
 Contents:
+------------------------------------------------------------
 
 .. toctree::
    :titlesonly:
@@ -18,10 +16,6 @@ Contents:
    Platform Support/index
    Troubleshooting
    Support
-
-
-Support
-------------------------------------------------------------
 
 Supported Unity Versions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -51,5 +45,5 @@ iOS                  ARMv7          OpenGLES3 / Metal
 Hardware Requirements
 ------------------------------------------------------------
 
-The full list of hardware requirements can be found here: `Requirements <https://drive.google.com/open?id=1kXDNg3hW7iKWFLR4SrQZykFQvrHJFYE-zu8xasTea3M>`_
+The full list of hardware requirements can be found here: `Hardware Requirements <https://drive.google.com/open?id=1kXDNg3hW7iKWFLR4SrQZykFQvrHJFYE-zu8xasTea3M>`_
 
