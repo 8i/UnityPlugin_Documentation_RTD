@@ -48,12 +48,12 @@ For example
         # Code
     END_METAL_VERTEX
 
-Control Functions
+Subroutines
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Control Functions are the interface for how the HVR renderer enters a ShaderSubroutine and uses it to modify the rendering of a HvrActor.
+Subroutines are the interface for how the HVR renderer uses the Shader to modify the rendering of a HvrActor.
 
-The following code demonstrates how to write Control Functions for color, position and scale.
+The following code demonstrates how to write Subroutines for color, position and scale.
 
 .. code-block:: none
 
