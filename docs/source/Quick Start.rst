@@ -34,18 +34,11 @@ Creating a build
 4. Click the 'Add Open Scenes' button on the right of the window, or drag the scene that was just saved from the 'Project' window of the Unity Editor.
 5. Click the 'Build and Run' and follow the onscreen prompts and select your build location.
 
-Unity will now compile the project and create an exe. If it does not, check the Troubleshooting section of this documentation. 
+Unity will now compile the project and create a build. If it does not, check the Unity Editor console or the Troubleshooting section of this documentation. 
 
 
 Building for VR
 ------------------------------------------------------------
-
-The 8i Unity Plugin fully supports VR rendering.
-
-To enable VR for your Unity Project
-    1. Open the 'Player Settings' window from 'Edit/Project Settings/Player'.
-    2. Tick the 'Virtual Reality Supported' checkbox.
-    3. From the new list, make sure the target headset you wish to use is listed. If it isn't, add it by clicking the + icon.
 
 If you are new to VR development in Unity, there are some great tutorials here:
 https://unity3d.com/learn/tutorials/topics/virtual-reality
@@ -53,3 +46,11 @@ https://unity3d.com/learn/tutorials/topics/virtual-reality
 If you encounter any issues getting VR working in your Unity Project, please consult the Unity Manual
 https://docs.unity3d.com/Manual/VROverview.html
 
+The 8i Unity Plugin fully supports VR rendering.
+
+To enable VR for your Unity Project
+
+    1. Open the 'Player Settings' window from 'Edit/Project Settings/Player'.
+    2. Tick the 'Virtual Reality Supported' checkbox.
+    3. From the new list, make sure the target headset you wish to use is listed. If it isn't, add it by clicking the + icon.
+    4. Ensure your main camera has a HvrRender component attached to it
