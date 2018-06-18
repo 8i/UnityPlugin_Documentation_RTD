@@ -1,9 +1,24 @@
-About
+8i Unity Plugin documentation
 ============================================================
 
-Documentation for the BETA release of 8i Unity Plugin 0.6.0.
+About
+------------------------------------------------------------
 
-This documentation is a work in progress, and some details may change during development.
+The 8i Unity Plugin allows developers to add 8i’s fully volumetric video to any Unity experience. It’s like embedding traditional 2D video content, except you get to walk around ours as it plays!
+
+Contents:
+
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1 
+
+   Installation
+   Quick Start
+   Components/index
+   Platform Support/index
+   Troubleshooting
+   Support
+
 
 Support
 ------------------------------------------------------------
@@ -37,3 +52,4 @@ Hardware Requirements
 ------------------------------------------------------------
 
 The full list of hardware requirements can be found here: `Requirements <https://drive.google.com/open?id=1kXDNg3hW7iKWFLR4SrQZykFQvrHJFYE-zu8xasTea3M>`_
+
