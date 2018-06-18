@@ -1,4 +1,4 @@
-8i Unity Plugin documentation
+8i Unity Plugin Documentation
 ============================================================
 
 About
