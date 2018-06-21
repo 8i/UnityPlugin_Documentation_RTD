@@ -10,10 +10,10 @@ This component allows custom shaders to affect the HvrActor during the native pl
     You may be required to modify the shader code for your specific target platform.
 
 
-Writing ShaderSubroutines
+Writing Shader Subroutines
 ------------------------------------------------------------
 
-Unlike Unity's ShaderLab shaders, ShaderSubroutines are not automatically converted to work for every BuildTarget. ShaderSubroutines must be written for each Graphics API that the effect needs to work on.
+Unlike Unity's ShaderLab shaders, shader subroutines are not automatically converted to work for every BuildTarget. Shader subroutines must be written for each Graphics API that the effect needs to work on.
 
 The current supported shader languages are GLSL, HLSL and Metal.
 
@@ -26,13 +26,14 @@ OpenGLES3            GLSL
 Metal                Metal Shading Language
 ==================   ===============
 
-**Code Blocks**
+Code Blocks
+^^^^^^^^^^^
 
-For convenience, a single ShaderSubroutine Shader can contain all of the different languages. When the shader is loaded it will only compile the relevant sections.
+For convenience, a single shader subroutine file can contain all of the different shader languages. When the file is loaded it will only compile the relevant sections.
 
-BEGIN and END lines are used to specify a block of code for different languages
+BEGIN and END lines are used to specify a block of code for different languages.
 
-For example
+For example:
 
 .. code-block:: none
 
@@ -48,38 +49,78 @@ For example
         # Code
     END_METAL_VERTEX
 
-**Subroutines**
+Shader Subroutine Syntax and Structure
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Subroutines are the interface for how the HVR renderer uses the Shader to modify the rendering of a HvrActor.
+Shader subroutines can control several properties of HvrActor rendering.
 
-The following code demonstrates how to write Subroutines for color, position and scale.
+A code block consists of a collection of subroutines. Each subroutine controls one feature of rendering,
+such as the object-space position of the vertex, the vertex or fragment colour, or the scale factor applied to the voxel.
+
+A subroutine is implemented as a function in the relevant shader language. The feature (position, colour, etc.) controlled by the
+subroutine is declared using an **output semantic**. Each shader subroutine may have several input parameters, which have values provided
+by the HVR Renderer, based on specified **input semantics**.
+
+Input and output semantics are declared using an extended shader language syntax, which is similar to the way that HLSL uses semantics.
+The HVR Renderer parses the extended syntax, processes the semantic declarations and outputs standard shader code.
+
+An example is given below, demonstrating modification of the vertex colour, object-space position and voxel scale.
+Note that the names of all subroutines need to be declared in a comma-separated list in parentheses after the code block BEGIN tag.
 
 .. code-block:: none
 
-    BEGIN_GLSL_VERTEX(VertexColor, VertexPosition, VertexScale)
+    BEGIN_GLSL_VERTEX(CalcVertexColour, CalcVertexPosition, CalcVertexScale)
 
-        // Control  colour
+        // Control colour
         vec4 CalcVertexColour(vec4 colour : VERTEX_COLOUR, vec4 oPos : OPOS) : VERTEX_COLOUR
         {
-            return colour;
+            // Example: This makes the colour darker.
+            // The 'oPos' parameter is not used in this example,
+            // but could be included in the calculation, i.e. to modify
+            // the colour based on the position.
+            return vec4(0.5 * colour.rgb, colour.a);
         }
 
         // Control position
-        vec4 VertexPosition(vec4 oPos : OPOS) : OPOS
+        vec4 CalcVertexPosition(vec4 oPos : OPOS) : OPOS
         {
-            return oPos;
+            // Example: This moves the vertex vertically upwards.
+            return vec4(oPos.x, oPos.y + 1.0, oPos.z, oPos.w);
         }
 
         // Control scale
-        float VertexScale(float scale : VOXEL_SCALE, vec4 oPos : OPOS) : VOXEL_SCALE
+        float CalcVertexScale(float scale : VOXEL_SCALE) : VOXEL_SCALE
         {
-            return scale;
+            // Example: This doubles the vertex size.
+            return 2.0 * scale;
         }
 
     END_GLSL_VERTEX
 
+In the example above, the CalcVertexColour subroutine has VERTEX_COLOUR specified as its output semantic,
+so the HVR Renderer uses its return value for the output vertex colour. Its input semantics are VERTEX_COLOUR and
+OPOS, so the parameters corresponding to these semantics will be filled in by the HVR Renderer with the original vertex position and colour.
 
-**Custom parameters and methods**
+The other two shader subroutines (CalcVertexPosition and CalcVertexScale) work similarly.
+
+A list of semantics and their functionality is given below. Each of these can be used as either input or output semantics.
+
+==================   =============== ===============
+Semantic             Type            Description
+==================   =============== ===============
+OPOS                 vec4 / float4   Object-space coordinates of the current vertex.
+VERTEX_COLOUR        vec4 / float4   The colour of the current vertex.
+FRAGMENT_COLOUR      vec4 / float4   The colour of the current fragment.
+VOXEL_SCALE          float           A scaling factor used to modify the size of the voxel (1.0 = original scale).
+==================   =============== ===============
+
+**Important note:** Each subroutine **must** be declared after the BEGIN tag in the code block header.
+This takes the form of a comma-separated list of function names in parentheses: for example, ``BEGIN_GLSL_VERTEX(CalcVertexColor, CalcVertexPosition, CalcVertexScale)`` in the example above. If a subroutine is not declared, it will be ignored by the HVR Renderer.
+
+Helper or utility functions without input or output semantics should **not** be declared in the code block header.
+
+Custom parameters and methods
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In order to support ShaderSubroutine Stacks, it is required to prefix all custom parameters and methods with "<ID>" (Without the quote marks).
 
