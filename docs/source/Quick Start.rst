@@ -51,7 +51,7 @@ The 8i Unity Plugin fully supports VR rendering.
 
 To enable VR for your Unity Project
 
-    1. Open the 'Player Settings' window from 'Edit/Project Settings/Player'.
-    2. Tick the 'Virtual Reality Supported' checkbox.
-    3. From the new list, make sure the target headset you wish to use is listed. If it isn't, add it by clicking the + icon.
-    4. Ensure your main camera has a HvrRender component attached to it
+1. Open the 'Player Settings' window from 'Edit/Project Settings/Player'.
+2. Tick the 'Virtual Reality Supported' checkbox.
+3. From the new list, make sure the target headset you wish to use is listed. If it isn't, add it by clicking the + icon.
+4. Ensure your main camera has a HvrRender component attached to it
