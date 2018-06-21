@@ -128,16 +128,54 @@ This takes the form of a comma-separated list of function names in parentheses: 
 
 Helper or utility functions without input or output semantics should **not** be declared in the code block header.
 
-Custom parameters and methods
+Shader Parameters
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Most shader subroutines are likely to need parameters provided by the application; for example, the current time, in
+effects that are dynamic or animated. These correspond to ``uniform`` variables in GLSL and constant buffers in HLSL.
+
+The name of each variable, struct or cbuffer should be prefixed by <ID> (this is discussed in the 'Shader Subroutine Stacks' section).
+
+In GLSL, shader parameters can be declared as global uniform variables:
+
+.. code-block:: none
+
+    uniform float _<ID>CurrentTime;
+
+Similarly, in HLSL, global cbuffers can be declared:
+
+.. code-block:: none
+
+    cbuffer _<ID>ShaderParams
+    {
+        float _<ID>CurrentTime;
+    }
+
+In the Metal shading language, shader inputs cannot be declared as global variables. Instead, a ``struct`` of parameters must
+be defined; this can then be declared as a parameter to a shader subroutine using the special semantic SHADER_UNIFORMS. For example:
+
+.. code-block:: none
+
+    struct _<ID>ShaderParams
+    {
+        float _<ID>CurrentTime;
+    };
+
+    float4 CalcVertexColour(float4 colour : VERTEX_COLOUR, _<ID>ShaderParams uniforms : SHADER_UNIFORMS) : VERTEX_COLOUR
+    {
+        return float4(colour.rgb * (sin(uniforms._<ID>CurrentTime) * 0.5 + 0.5), colour.a);
+    }
+
+Shader Subroutine Stacks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In order to support ShaderSubroutine Stacks, it is required to prefix all custom parameters and methods with "<ID>" (Without the quote marks).
+In order to support shader subroutine stacks, it is required to prefix all custom parameters and methods with "<ID>" (without the quote marks).
 
-This is necessary because when a ShaderSubroutine Stack is created all of the shaders in the stack are compiled into one large shader. If more than one of those shaders has a parameter with the same name, the parameter's value will not be able to be set differently for each shader. For example, if two shaders had the parameter "colour".
+This is necessary because when a shader subroutine stack is created, all of the shaders in the stack are compiled into one large shader. If more than one of those shaders has a parameter with the same name, the parameter's value will not be able to be set differently for each shader. For example, if two shaders had the parameter "colour".
 
-In order to address this, a unique ID is generated for each ShaderSubroutine and is used when the ShaderSubroutine Stack is created. This ID is used to replace the "<ID>" prefix and ensures that each shader has unique parameter and method names;
+In order to address this, a unique ID is generated for each file and is used when the shader subroutine stack is created. This ID is used to replace the "<ID>" prefix and ensures that each shader has unique parameter and method names;
 
-This example demonstrates how to write a shader which is compatible with ShaderSubroutine Stacks.
+This example demonstrates how to write a shader which is compatible with shader subroutine stacks.
 
 .. code-block:: none
 
