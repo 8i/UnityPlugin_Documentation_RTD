@@ -4,14 +4,13 @@ iOS
 Requirements
 ------------------------------------------------------------
 
-Supported Hardware
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Supported Hardware**
 
-For a list of supported device features and hardware requirements please see the `Hardware Requirements <https://drive.google.com/open?id=1kXDNg3hW7iKWFLR4SrQZykFQvrHJFYE-zu8xasTea3M>`_
+For a list of supported device features and hardware requirements please see the `Hardware Requirements <https://drive.google.com/open?id=1kXDNg3hW7iKWFLR4SrQZykFQvrHJFYE-zu8xasTea3M>`_ 
 
 
-Build requirements
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Build requirements**
+
 When building for iOS, there are a few things to be noted.
 
 * A Mac is required to generate the iOS xcode project

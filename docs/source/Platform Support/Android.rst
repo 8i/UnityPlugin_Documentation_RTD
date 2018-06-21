@@ -4,14 +4,12 @@ Android
 Requirements
 ------------------------------------------------------------
 
-Supported Hardware
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Supported Hardware**
 
-For a list of supported device features and hardware requirements please see the `Hardware Requirements <https://drive.google.com/open?id=1kXDNg3hW7iKWFLR4SrQZykFQvrHJFYE-zu8xasTea3M>`_
+For a list of supported device features and hardware requirements please see the `Hardware Requirements <https://drive.google.com/open?id=1kXDNg3hW7iKWFLR4SrQZykFQvrHJFYE-zu8xasTea3M>`_ 
 
 
-Including HVR Data with your Build
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Including HVR Data with your Build**
 
 Using the 8i Unity Plugin within an Android build requires that the HVR and/or HVRS frames are available on the device's local storage in a folder with read access.
 
@@ -27,8 +25,7 @@ This feature is available through the "HvrUnpackingScene" scene included with th
 If your project does not require it, this feature can be ignored by not using the "HvrUnpackingScene". In this case it assume that your HVR frames will already exist on the local storage or your application will download them.
 
 
-Google Play requirements
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Google Play requirements**
 
 The Google Play Store imposes a size limit of 100mb for APK files uploaded for distribution. To allow larger data to be shipped with an APK, Android supports OBB files, also known as Application Expansion Files (`Read More <https://developer.android.com/google/play/expansion-files>`_)
 
@@ -36,7 +33,7 @@ Unity also supports these files, via a player setting called "Split Application 
 
 
 Building
---------------------
+------------------------------------------------------------
 
 If you are using the HvrUnpackingScene in your project a custom build step must be used. This step will scan the scenes in your project and copy any required HVR data into the project's StreamingAssets folder.
 
