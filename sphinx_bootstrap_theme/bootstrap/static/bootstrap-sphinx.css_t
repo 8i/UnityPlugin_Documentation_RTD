@@ -167,6 +167,8 @@ table.field-list {
   margin-bottom: 30px;
   padding-top:    10px;
   padding-bottom: 10px;
+  padding-left:   10px;
+  padding-right:  10px;
   text-shadow: 0 1px 0 #fff;
   background-color: #f7f5fa;
   border-radius: 5px;

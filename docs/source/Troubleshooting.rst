@@ -1,11 +1,21 @@
+============================================================
 Troubleshooting
 ============================================================
+
+Cannot create Hvr components
+------------------------------------------------------------
+
+Possible Fixes:
+
+- Check that the plugin was fully extracted from the '8i Unity Plugin' zip.
+- If you recently updated the plugin, make sure that you closed the Unity Editor adding the new plugin folder to your project. The Unity Editor can lock the native binaries included in the plugin and block you from writing over them.
+- Make sure the Unity version is compatible with this version of the plugin.
+- Check the console to see whether there are any errors blocking Unity from compiling the plugin.
 
 Improving Performance
 ------------------------------------------------------------
 
-Option 1 - Use lower resolution data
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Use lower resolution data**
 
 It is recommended using this table when choosing which resolution to use for your application.
 
@@ -32,20 +42,19 @@ Resolution           800,000
 Frame                1009
 ==================   ================
 
-Option 2 - Change the HvrActor render method
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Change the HvrActor render method**
+
 It is recommended to use the 'FastCubes' render method in order to improve performance.
 
 
-Option 3 - Change the HvrRender render mode
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Change the HvrRender render mode**
+
 The 'Direct' render mode provides the best performance and memory usage.
 
 There are downsides of this method which are outlined in the HvrRender section of this documentation.
 
 
-Performance Tips for Mobile
-------------------------------------------------------------
+**Mobile Performance Tips**
 
 - Point Count
     As mobile platforms perform much slower than desktop systems it is recommended that hvr frames with point counts of 600k or less are used, with the recommended point count being around 300k.
@@ -62,14 +71,12 @@ Performance Tips for Mobile
 HVR Actors are not rendering
 ------------------------------------------------------------
 
-Common
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Common Problems**
 
 - The Main Camera does not have a HvrRender component attached
     A common mistake is to not attach a HvrRender component to the main rendering camera in the scene
 
-Android
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Android**
 
 - The Graphics API may not be supported
     Make sure that under the PlayerSettings that the targeting GraphicsAPI is GLES3 and that your device supports GLES3.
@@ -93,23 +100,8 @@ Android
 
     - Project using the "HvrUnpackingScene" and was built using the custom build menu
         Check the Editor Build Settings and ensure that there is a second scene directly after the "HvrUnpackingScene".
+        
+- Android failing to extract data from OBB file
+    Some devices do correctly allow the OBB file to be copied to the device when using the "Build and Run" option in Unity, and in some cases will silently fail to update the OBB when the project is built. If this occurs, the OBB file will need to be manually copied to the development device.
 
-
-Cannot create Hvr components
-------------------------------------------------------------
-
-Possible Fixes:
-
-- Check that the plugin was fully extracted from the '8i Unity Plugin' zip.
-- If you recently updated the plugin, make sure that you closed the Unity Editor adding the new plugin folder to your project. The Unity Editor can lock the native binaries included in the plugin and block you from writing over them.
-- Make sure the Unity version is compatible with this version of the plugin.
-- Check the console to see whether there are any errors blocking Unity from compiling the plugin.
-
-
-Android build failing to extract frames from OBB
-------------------------------------------------------------
-
-Some devices do correctly allow the OBB file to be copied to the device when using the "Build and Run" option in Unity, and in some cases will silently fail to update the OBB when the project is built. If this occurs, the OBB file will need to be manually copied to the development device.
-
-So far only the Samsung Galaxy Note 5 has been observed with this issue. 
-
+    So far only the Samsung Galaxy Note 5 has been observed with this issue. 

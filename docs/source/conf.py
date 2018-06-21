@@ -158,7 +158,7 @@ html_theme_options = {
 
     # Global TOC depth for "site" navbar tab. (Default: 1)
     # Switching to -1 shows all levels.
-    'globaltoc_depth': 2,
+    'globaltoc_depth': 1,
 
     # Include hidden TOCs in Site navbar?
     #
@@ -247,7 +247,9 @@ html_static_path = ['nstatic']
 
 # Custom sidebar templates, maps document names to template names.
 #
-# html_sidebars = {}
+html_sidebars = {
+  '**': ['globaltoc.html','localtoc.html'],
+}
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.

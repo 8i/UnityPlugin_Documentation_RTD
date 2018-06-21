@@ -5,11 +5,7 @@ All components included in this plugin can be found within the 'Component' menu 
 
 Unity's manual demonstrates how components are used: https://docs.unity3d.com/Manual/UsingComponents.html
 
-Components
-------------------------------------------------------------
-
-Main Components
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Main Components**
 
 .. toctree::
    :titlesonly:
@@ -18,8 +14,7 @@ Main Components
    HvrRender
    HvrLight
 
-Effects and Utility Components
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Effects and Utility Components**
 
 .. toctree::
    :titlesonly:

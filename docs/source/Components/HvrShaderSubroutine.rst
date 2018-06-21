@@ -1,3 +1,4 @@
+============================================================
 HvrShaderSubroutine
 ============================================================
 
@@ -25,8 +26,7 @@ OpenGLES3            GLSL
 Metal                Metal Shading Language
 ==================   ===============
 
-Code Blocks
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Code Blocks**
 
 For convenience, a single ShaderSubroutine Shader can contain all of the different languages. When the shader is loaded it will only compile the relevant sections.
 
@@ -48,8 +48,7 @@ For example
         # Code
     END_METAL_VERTEX
 
-Subroutines
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Subroutines**
 
 Subroutines are the interface for how the HVR renderer uses the Shader to modify the rendering of a HvrActor.
 
@@ -80,8 +79,7 @@ The following code demonstrates how to write Subroutines for color, position and
     END_GLSL_VERTEX
 
 
-Custom parameters and methods
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Custom parameters and methods**
 
 In order to support ShaderSubroutine Stacks, it is required to prefix all custom parameters and methods with "<ID>" (Without the quote marks).
 
@@ -116,8 +114,7 @@ This example demonstrates how to write a shader which is compatible with ShaderS
 Examples
 ------------------------------------------------------------
 
-Example 1
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Example 1**
 
 Set all voxels to be blue
 
@@ -147,8 +144,7 @@ Set all voxels to be blue
         }
     END_METAL_VERTEX
 
-Example 2
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Example 2**
 
 Offset the position of all vertices vertically
 
@@ -182,8 +178,7 @@ Offset the position of all vertices vertically
     END_METAL_VERTEX
 
 
-Example 3
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Example 3**
 
 The following sets the color of all voxels to be blue, and sets their scale to 0 if they are below 1m in the data's object space.
 
