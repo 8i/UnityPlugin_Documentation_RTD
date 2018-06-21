@@ -33,6 +33,10 @@ For convenience, a single shader subroutine file can contain all of the differen
 
 BEGIN and END lines are used to specify a block of code for different languages.
 
+In addition, each type of shader subroutine corresponds to one shader stage: either the vertex or fragment (pixel) shader stage.
+A code block will have a ``_VERTEX`` or ``_FRAGMENT`` suffix depending on the types of shader subroutines it contains.
+The available types of shader subroutines are discussed later in this page.
+
 For example:
 
 .. code-block:: none
@@ -40,6 +44,10 @@ For example:
     BEGIN_GLSL_VERTEX
         # Code
     END_GLSL_VERTEX
+
+    BEGIN_GLSL_FRAGMENT
+        # Code
+    END_GLSL_FRAGMENT
 
     BEGIN_HLSL_VERTEX
         # Code
@@ -104,15 +112,16 @@ OPOS, so the parameters corresponding to these semantics will be filled in by th
 The other two shader subroutines (CalcVertexPosition and CalcVertexScale) work similarly.
 
 A list of semantics and their functionality is given below. Each of these can be used as either input or output semantics.
+Each subroutine must be declared in the appropriate code block (VERTEX or FRAGMENT) based on the shader stage of its output semantic.
 
-==================   =============== ===============
-Semantic             Type            Description
-==================   =============== ===============
-OPOS                 vec4 / float4   Object-space coordinates of the current vertex.
-VERTEX_COLOUR        vec4 / float4   The colour of the current vertex.
-FRAGMENT_COLOUR      vec4 / float4   The colour of the current fragment.
-VOXEL_SCALE          float           A scaling factor used to modify the size of the voxel (1.0 = original scale).
-==================   =============== ===============
+==================   =============== =============== ===============
+Semantic             Type            Shader Stage    Description
+==================   =============== =============== ===============
+OPOS                 vec4 / float4   Vertex          Object-space coordinates of the current vertex.
+VERTEX_COLOUR        vec4 / float4   Vertex          The colour of the current vertex.
+FRAGMENT_COLOUR      vec4 / float4   Fragment        The colour of the current fragment (pixel).
+VOXEL_SCALE          float           Vertex          A scaling factor used to modify the size of the voxel (1.0 = original scale).
+==================   =============== =============== ===============
 
 **Important note:** Each subroutine **must** be declared after the BEGIN tag in the code block header.
 This takes the form of a comma-separated list of function names in parentheses: for example, ``BEGIN_GLSL_VERTEX(CalcVertexColor, CalcVertexPosition, CalcVertexScale)`` in the example above. If a subroutine is not declared, it will be ignored by the HVR Renderer.
