@@ -166,6 +166,22 @@ be defined; this can then be declared as a parameter to a shader subroutine usin
         return float4(colour.rgb * (sin(uniforms._<ID>CurrentTime) * 0.5 + 0.5), colour.a);
     }
 
+For Metal, textures should be declared in a separate ``struct`` and used with the SHADER_TEXTURES semantic. For example:
+
+.. code-block:: none
+
+    struct _<ID>ShaderTextures
+    {
+        texture2d<float> _<ID>RGLookupTable;
+    };
+
+    float4 CalcVertexColour(float4 colour : VERTEX_COLOUR, _<ID>ShaderTextures textures : SHADER_TEXTURES) : VERTEX_COLOUR
+    {
+        // Uses the R and G components of the original colour as texture coordinates.
+        constexpr sampler textureSampler(mag_filter::linear, min_filter::linear);
+        return textures._<ID>RGLookupTable.sample(textureSampler, colour.rg);
+    }
+
 Shader Subroutine Stacks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
