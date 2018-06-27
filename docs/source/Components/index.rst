@@ -23,6 +23,7 @@ Unity's manual demonstrates how components are used: https://docs.unity3d.com/Ma
    HvrActorAnimationSync
    HvrActorAudioSourceSync
    HvrActorProjectorShadow
-   HvrActorTrigger
    HvrColorGrading
    HvrShaderSubroutine
+   HvrDataBuildInclude
+   HvrTrigger
