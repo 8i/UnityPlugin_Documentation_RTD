@@ -1,5 +1,5 @@
 ============================================================
-8i Unity Plugin Documentation
+About
 ============================================================
 
 The 8i Unity Plugin allows developers to add 8i’s fully volumetric video to any Unity experience. It’s like embedding traditional 2D video content, except you get to walk around ours as it plays!
