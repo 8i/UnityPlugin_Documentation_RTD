@@ -2,7 +2,9 @@
 HvrDataBuildInclude and HvrDataReference
 ============================================================
 
-The HvrDataBuildInclude component and HvrDataReference can be used to include files and folders from your Project which are not assigned to HvrActors. This is useful in situations where your project is creating HvrActors at runtime and you do not want to manually copy data from your project to your build.
+The HvrDataBuildInclude component and HvrDataReference can be used to include files and folders from your Project which are not assigned to HvrActors.
+
+This is useful in situations where your project is creating HvrActors at runtime and you do not want to manually copy data from your project to your build.
 
 During the build process the 8i Unity Plugin will scan any scenes that are to be built and check the components to find any HvrActors which are using the 'Reference' Data Mode. It will also search for HvrDataBuildInclude components which have a HvrDataReference assigned. If any are found, the data that is referenced will be will be copied to the build folder so the built application can load them.
 

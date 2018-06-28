@@ -7,5 +7,5 @@ This component allows the color grading to be applied to the rendering of HvrAct
 Adjusting the values and sliders of this component will affect the look of the HvrActor it is attached to.
 
 .. note::
-    The 'Direct' render mode available on HvrRender and HvrActor are not compatible with this component.
+    The 'Direct' render mode available on HvrRender is not compatible with this component.
 

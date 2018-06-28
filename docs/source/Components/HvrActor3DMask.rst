@@ -34,9 +34,9 @@ Parameters
 +----------+--------+---------------------------------------+
 | Property | Type   | Function                              |
 +----------+--------+---------------------------------------+
-| Options  | Sphere | Mask using a sphere                   |
+| Options  | Sphere | Mask type will be a sphere            |
 +----------+--------+---------------------------------------+
-|          | Box    | Mask using a cube                     |
+|          | Box    | Mask type will be a cube              |
 +----------+--------+---------------------------------------+
 | Additive | Bool   | Is this mask additive or subtractive? |
 +----------+--------+---------------------------------------+

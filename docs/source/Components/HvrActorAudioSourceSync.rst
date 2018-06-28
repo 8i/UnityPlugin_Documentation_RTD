@@ -10,6 +10,7 @@ It expects the audiosource to have an audioclip assigned. Once you have assigned
 
 If the AudioClip assigned to the AudioSource is shorter than the HvrActor's asset duration it will play as long as it can, if it is longer it will stop once the HvrActor stops playing.
 
+The AudioClip will match the HvrActor's current time. Syncing the HvrActor to the AudioClips's time is not supported.
 
 Parameters
 ------------------------------------------------------------
@@ -17,9 +18,9 @@ Parameters
 +--------------+-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Parameter    | Type        | Function                                                                                                                                                             |
 +--------------+-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Actor        | HvrActor    | A HvrActor which has an Asset                                                                                                                                        |
+| Actor        | HvrActor    | A HvrActor which will be synced with                                                                                                                                      |
 +--------------+-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Audio Source | AudioSource | A AudioSource component which has a AudioClip assigned to it                                                                                                         |
 +--------------+-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Offse        | Float       | A time in seconds which this component will use to offset the sync time. This can be useful for situations where the audio clip start time does not match the Asset. |
+| Offset       | Float       | A time in seconds which this component will use to offset the sync time. This can be useful for situations where the audio clip start time does not match the Asset. |
 +--------------+-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
