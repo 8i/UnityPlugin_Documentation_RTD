@@ -2,9 +2,12 @@
 Troubleshooting
 ============================================================
 
+Recommended Project Settings
+------------------------------------------------------------
+
 The 'Recommended Project Settings' window found through the '8i' menu at the top of the Unity Editor offers tips and potential automatic fixes for common compatibility issues with your Project's settings.
 
-Cannot create Hvr components
+Cannot create HVR components
 ------------------------------------------------------------
 
 Possible Fixes:
