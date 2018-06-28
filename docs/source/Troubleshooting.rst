@@ -12,21 +12,21 @@ Possible Fixes:
 - Make sure the Unity version is compatible with this version of the plugin.
 - Check the console to see whether there are any errors blocking Unity from compiling the plugin.
 
-Improving Performance
+Performance is low
 ------------------------------------------------------------
 
 **Use lower resolution data**
 
 It is recommended using this table when choosing which resolution to use for your application.
 
-==================   ==   ==========================
-Resolution           PC   Mobile
-==================   ==   ==========================
-1,500,000            ✓    ✖ ( Not recommended for Mobile )
-800,000              ✓    ✓ ( High End Device Required )
+==================   ==   ======   ====================
+Resolution           PC   Mobile   Description
+==================   ==   ======   ====================
+1,500,000            ✓    ✖       Not recommended for Mobile
+800,000              ✓    ✓       High End Device Required
 600,000              ✓    ✓ 
 400,000              ✓    ✓ 
-==================   ==   ==========================
+==================   ==   ======   ====================
 
 The filename of the hvr file will tell you the resolution. This number represents the density of the data and the overall quality.
 
