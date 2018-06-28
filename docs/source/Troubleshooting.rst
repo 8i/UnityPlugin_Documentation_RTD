@@ -24,14 +24,14 @@ Performance is low
 
 It is recommended using this table when choosing which resolution to use for your application.
 
-==================   ==   ======   ====================
-Resolution           PC   Mobile   Description
-==================   ==   ======   ====================
-1,500,000            ✓    ✖       Not recommended for Mobile
-800,000              ✓    ✓       High End Device Required
-600,000              ✓    ✓ 
-400,000              ✓    ✓ 
-==================   ==   ======   ====================
+==================   ==   ======   ========================================
+Resolution           PC   Mobile   About
+==================   ==   ======   ========================================
+1,500,000            Y    N        Not recommended for moile
+800,000              Y    Y        High end device required
+600,000              Y    Y 
+400,000              Y    Y 
+==================   ==   ======   ========================================
 
 The filename of the hvr file will tell you the resolution. This number represents the density of the data and the overall quality.
 
@@ -44,7 +44,7 @@ Ie: BOXER_200_tc_v01_800000_001009.hvr will be:
 ==================   ================
 Name                 BOXER_200_tc_v01
 Resolution           800,000
-Frame                1009
+Frame number         1009
 ==================   ================
 
 **Change the HvrActor render method**
