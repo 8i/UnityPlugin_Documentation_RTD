@@ -4,13 +4,13 @@
 The 8i Unity Plugin is a plugin for the Unity game engine.
 It adds the ability to render and interact with hvr content.
 
-Writing the Docs
-================
+# Documentation
+
+## Writing the Docs
 
 This documentation is written using markdown files and is generated using [Sphinx](http://www.sphinx-doc.org).
 
-Building The Docs
-=================
+## Building The Docs
 
 Requirements
 
@@ -25,5 +25,5 @@ cd docs
 .\make html
 ```
 
-The output will be located within ROOT\docs\build\html\. This build can now be hosted online or and viewed offline.
+The output will be located within ROOT\docs\build\html and can be hosted online or viewed offline.
 
