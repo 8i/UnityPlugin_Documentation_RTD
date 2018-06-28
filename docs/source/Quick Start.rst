@@ -1,35 +1,39 @@
 ============================================================
-Quick Start
+Getting Started
 ============================================================
 
-Creating a simple scene
+
+1. Close the Unity Editor.
+2. Completely remove the previous version by deleting the ‘8i’ folder from your project.
+3. Extract the ‘8i’ folder from the plugin zip file into your project
+
+It is very important to close the Unity Editor before updating the plugin. This is required as the Unity Editor will lock the native dlls from being overwritten or deleted while they are in use. This can cause issues where the plugin can get into a state where the native dll does not get updated and the plugin will be in an unstable state.
+
+
+Adding a HvrActor to your scene
 ------------------------------------------------------------
 
-If you are new to Unity then there are some excellent tutorials for learning the interface and it’s features here 
-https://unity3d.com/learn/tutorials
+Before beginning, ensure that the HvrActor, HvrRender or HvrLight components are available through the Unity Component Menus. If they are not, check the installation instructions or the Troubleshooting section of this documentation.
 
-Before beginning, ensure that the HvrActor, HvrRender or HvrLight components are available through the Unity Component Menus. If they are not, check the installation instructions or the Troubleshooting section of this documentation. 
+1. Create a HvrActor by right clicking in the Hierachy and select '8i/Create HvrActor'
+2. Drag and drop one of the folders contained under '8i/examples/assets/hvr/' onto the 'Reference' slot of the HvrActor
+3. At the bottom of the inspector click 'Add Component' and search for "HvrRender". Click it to add it to the Main Camera in your scen
 
-1. Create a new Unity Project.
-2. Add the 8i Unity Plugin into your Unity Project.
-3. Create a new folder within your Unity Project.
-4. Copy the hvr frames you wish to use into the folder.
-5. Create a `HvrActor` by right clicking in the Hierachy and select '8i/Create HvrActor'
-6. Drag the folder that was created earlier into the 'reference' slot on the `HvrActor`.
-7. Select the `Main Camera` object from the Hierachy.
-8. At the bottom of the inspector click 'Add Component' and search for "HvrRender". Click it to add it to the `Main Camera`.
-9. Position the `Main Camera` in front of the HvrActor.
+The HvrActor will now be rendering both the scene and game view.
 
 .. note::
-    The HvrActor should now be visible in the Unity Editor Game View. However it may be darker than the surrounding environment as the scene does not contain a HvrLight component to light the actor. In order to light it:
+    The HvrActor should now be visible in the Unity Editor Game View. However it may be darker than the surrounding environment as the scene does not contain a HvrLight component to light the actor.
+    
+    In order to light it:
     
     1. Select the 'Directional Light' object or create it if you don't have one already.
     2. At the bottom of the inspector click 'Add Component' and search for 'HvrLight'. Click it to add it to the 'Directional Light'.
 
+
 Creating a build
 ------------------------------------------------------------
 
-1. Follow the 'Creating a scene' steps above.
+1. Follow the 'Adding a HvrActor to your scene' steps above.
 2. Save the scene.
 3. Open Build Settings window under 'File/Build Settings...'.
 4. Click the 'Add Open Scenes' button on the right of the window, or drag the scene that was just saved from the 'Project' window of the Unity Editor.
