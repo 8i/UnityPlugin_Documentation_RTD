@@ -2,7 +2,9 @@
 HvrActor
 ============================================================
 
-This component provides the ability to create and play HVR data within Unity. It offers control over how the data is played and how it is rendered.
+This component provides the ability to create and play HVR data within Unity.
+
+It offers control over how the data is played and how it is rendered.
 
 Parameters
 ------------------------------------------------------------

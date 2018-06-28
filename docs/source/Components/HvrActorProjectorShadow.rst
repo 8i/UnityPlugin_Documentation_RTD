@@ -2,7 +2,7 @@
 HvrActorProjectorShadow
 ============================================================
 
-Can be used in conjunction with a Projector component to project a texture onto a surface based on the bounds of an HvrActor. This is useful for creating blob shadows.
+This component can be used to align a Projector component based on the bounds of an HvrActor. This is useful for creating blob shadows.
 
 Parameters
 ------------------------------------------------------------
