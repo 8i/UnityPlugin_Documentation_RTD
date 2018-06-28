@@ -4,23 +4,6 @@ About
 
 The 8i Unity Plugin allows developers to add 8i’s fully volumetric video to any Unity experience. It’s like embedding traditional 2D video content, except you get to walk around ours as it plays!
 
-Download and Installation
-------------------------------------------------------------
-
-The 8i Unity Plugin can be downloaded from https://8i.com/developers/unity/
-
-Previous versions can be found `here <https://drive.google.com/drive/u/0/folders/0B-1RcaY7OypbVmdXSy02c0J3czA>`_
-
-**Installating**
-
-Extract the ‘8i’ folder from the plugin zip file into your project.
-
-**Updating**
-
-Close the Unity Editor and delete the '8i' folder from your project.
-
-It is required to close the Unity Editor fully as it the Editor will lock the native dlls from being overwritted or deleted.
-
 Support
 ------------------------------------------------------------
 
@@ -57,7 +40,7 @@ The full list of hardware requirements can be found here: `Hardware Requirements
    :maxdepth: 1 
 
    index
-   Quick Start
+   Getting Started
    Components/index
    Platform Support/index
    Troubleshooting
