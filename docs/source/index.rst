@@ -8,12 +8,15 @@ Download and Installation
 ------------------------------------------------------------
 
 The 8i Unity Plugin can be downloaded from https://8i.com/developers/unity/
+
 Previous versions can be found `here <https://drive.google.com/drive/u/0/folders/0B-1RcaY7OypbVmdXSy02c0J3czA>`_
 
-*Installating*
+**Installating**
+
 Extract the ‘8i’ folder from the plugin zip file into your project.
 
-*Updating*
+**Updating**
+
 Close the Unity Editor and delete the '8i' folder from your project.
 
 It is required to close the Unity Editor fully as it the Editor will lock the native dlls from being overwritted or deleted.
