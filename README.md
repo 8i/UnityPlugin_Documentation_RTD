@@ -6,6 +6,8 @@ It adds the ability to render and interact with hvr content.
 
 # Documentation
 
+Documentation can be found under the 'docs' folder in the root of this repository.
+
 ## Writing the Docs
 
 This documentation is written using markdown files and is generated using [Sphinx](http://www.sphinx-doc.org).
