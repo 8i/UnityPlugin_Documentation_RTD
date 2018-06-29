@@ -10,8 +10,6 @@ The 'Recommended Project Settings' window found through the '8i' menu at the top
 Cannot create HVR components
 ------------------------------------------------------------
 
-Possible Fixes:
-
 - Check that the plugin was fully extracted from the '8i Unity Plugin' zip.
 - If you recently updated the plugin, make sure that you closed the Unity Editor adding the new plugin folder to your project. The Unity Editor can lock the native binaries included in the plugin and block you from writing over them.
 - Make sure the Unity version is compatible with this version of the plugin.
