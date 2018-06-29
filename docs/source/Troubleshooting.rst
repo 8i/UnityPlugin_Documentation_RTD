@@ -27,8 +27,8 @@ It is recommended using this table when choosing which resolution to use for you
 ==================   ==   ======   ========================================
 Resolution           PC   Mobile   About
 ==================   ==   ======   ========================================
-1,500,000            Y    N        Not recommended for moile
-800,000              Y    Y        High end device required
+1,500,000            Y    N        Not recommended for mobile
+800,000              Y    Y        High end mobile device is required
 600,000              Y    Y 
 400,000              Y    Y 
 ==================   ==   ======   ========================================
