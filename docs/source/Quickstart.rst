@@ -41,12 +41,6 @@ If it does not, check the Unity Editor console or the Troubleshooting section of
 Building for VR
 ------------------------------------------------------------
 
-If you are new to VR development in Unity, there are some great tutorials here:
-https://unity3d.com/learn/tutorials/topics/virtual-reality
-
-If you encounter any issues getting VR working in your Unity Project, please consult the Unity Manual
-https://docs.unity3d.com/Manual/VROverview.html
-
 The 8i Unity Plugin fully supports VR rendering.
 
 To enable VR for your Unity Project
@@ -55,3 +49,6 @@ To enable VR for your Unity Project
 2. Tick the 'Virtual Reality Supported' checkbox.
 3. From the new list, make sure the target headset you wish to use is listed. If it isn't, add it by clicking the + icon.
 4. Ensure your main camera has a HvrRender component attached to it
+
+If you encounter any issues getting VR working in your Unity Project, please consult the Unity Manual
+`[Link to Unity Docs] <https://docs.unity3d.com/Manual/VROverview.html>`_
