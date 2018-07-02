@@ -8,6 +8,7 @@ Download the 8i Unity Plugin from https://8i.com/developers/unity/
 
 Once downloaded extract the ‘8i’ folder from the zip file into your project's Asset directory.
 
+
 Creating a HvrActor
 ------------------------------------------------------------
 
@@ -16,17 +17,11 @@ Before beginning, ensure that the HvrActor, HvrRender or HvrLight components are
 1. Create a HvrActor by right clicking in the Hierachy and select '8i/Create HvrActor'
 2. Drag and drop one of the folders contained under '8i/examples/assets/hvr/' onto the 'Reference' slot of the HvrActor
 3. Select the Main Camera in the scene
-4. At the bottom of the inspector click 'Add Component' and search for "HvrRender"
+4. Add the 'HvrRender' component
+5. Select the 'Directional Light' in the scene.
+6. Add the 'HvrLight' component
 
 The HvrActor will now be rendering both the scene and game view.
-
-.. note::
-    The HvrActor should now be visible in the Unity Editor Game View. However it may be darker than the surrounding environment as the scene does not contain a HvrLight component to light the actor.
-    
-    In order to light it:
-    
-    1. Select the 'Directional Light' object or create it if you don't have one already.
-    2. At the bottom of the inspector click 'Add Component' and search for 'HvrLight'. Click it to add it to the 'Directional Light'.
 
 
 Creating a build
