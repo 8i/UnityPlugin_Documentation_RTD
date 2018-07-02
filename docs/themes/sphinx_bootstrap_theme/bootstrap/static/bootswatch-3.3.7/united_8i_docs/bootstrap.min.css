@@ -113,7 +113,8 @@ optgroup{
   font-weight:bold}
 table{
   border-collapse:collapse;
-  border-spacing:0}
+  border-spacing:0;
+  }
 td,th{
   padding:0}
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */@media print{
@@ -1463,7 +1464,9 @@ th{
 .table{
   width:100%;
   max-width:100%;
-  margin-bottom:20px}
+  margin-top:20px;
+  margin-bottom:20px;
+  }
 .table>thead>tr>th,.table>tbody>tr>th,.table>tfoot>tr>th,.table>thead>tr>td,.table>tbody>tr>td,.table>tfoot>tr>td{
   padding:8px;
   line-height:1.42857143;
