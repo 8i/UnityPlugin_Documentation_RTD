@@ -1,10 +1,9 @@
 Platform Support
 ============================================================
 
-Contents:
-
 .. toctree::
    :titlesonly:
+   :caption: Platforms
 
    Android
    iOS

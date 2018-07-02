@@ -1,34 +1,22 @@
-============================================================
-Getting Started
+Quick Start
 ============================================================
 
 Download and Installation
 ------------------------------------------------------------
 
-The 8i Unity Plugin can be downloaded from https://8i.com/developers/unity/
+Download the 8i Unity Plugin from https://8i.com/developers/unity/
 
-Previous versions can be found `here <https://drive.google.com/drive/u/0/folders/0B-1RcaY7OypbVmdXSy02c0J3czA>`_
+Once downloaded extract the ‘8i’ folder from the zip file into your project's Asset directory.
 
-Installating
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Extract the ‘8i’ folder from the plugin zip file into your project.
-
-Updating
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Close the Unity Editor and delete the '8i' folder from your project.
-
-It is required to close the Unity Editor fully as it the Editor will lock the native dlls from being overwritted or deleted.
-
-Adding a HvrActor to your scene
+Creating a HvrActor
 ------------------------------------------------------------
 
 Before beginning, ensure that the HvrActor, HvrRender or HvrLight components are available through the Unity Component Menus. If they are not, check the installation instructions or the Troubleshooting section of this documentation.
 
 1. Create a HvrActor by right clicking in the Hierachy and select '8i/Create HvrActor'
 2. Drag and drop one of the folders contained under '8i/examples/assets/hvr/' onto the 'Reference' slot of the HvrActor
-3. At the bottom of the inspector click 'Add Component' and search for "HvrRender". Click it to add it to the Main Camera in your scen
+3. Select the Main Camera in the scene
+4. At the bottom of the inspector click 'Add Component' and search for "HvrRender"
 
 The HvrActor will now be rendering both the scene and game view.
 
@@ -50,7 +38,9 @@ Creating a build
 4. Click the 'Add Open Scenes' button on the right of the window, or drag the scene that was just saved from the 'Project' window of the Unity Editor.
 5. Click the 'Build and Run' and follow the onscreen prompts and select your build location.
 
-Unity will now compile the project and create a build. If it does not, check the Unity Editor console or the Troubleshooting section of this documentation. 
+Unity will now compile the project and create a build.
+
+If it does not, check the Unity Editor console or the Troubleshooting section of this documentation. 
 
 
 Building for VR

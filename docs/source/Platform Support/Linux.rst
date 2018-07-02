@@ -1,12 +1,30 @@
 Linux
 ============================================================
 
+Support
+------------------------------------------------------------
+
+==================   ======================================================================================================
+Architecture         - x64
+Graphics API         - OpenGlCore
+==================   ======================================================================================================
+
 Requirements
 ------------------------------------------------------------
 
-**Supported Hardware**
-
-For a list of supported device features and hardware requirements please see the `Hardware Requirements <https://drive.google.com/open?id=1kXDNg3hW7iKWFLR4SrQZykFQvrHJFYE-zu8xasTea3M>`_ 
+==================   ======================================================================================================
+CPU                  - Intel and AMD
+                     - Requires 64bit
+GPU                  - ATi and Nvidia
+                     - Requires OpenGL 4.1 or D3D 11.1
+RAM                  - Recommended >2GB ( Requirements vary based on application and data quality )
+OS                   - Ubuntu 16.04
+                     - Ubuntu 17.10
+Min Spec             - Intel Core2 Quad CPU Q6600 @ 2.4 GHz
+                     - 4GB Ram
+                     - Nvidia 970 or equivalent ( For VR )
+                     - Integrated graphics have been tested for modern i5 & i7, but will render slow
+==================   ======================================================================================================
 
 Building
 ------------------------------------------------------------

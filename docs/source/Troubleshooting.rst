@@ -1,16 +1,18 @@
-============================================================
 Troubleshooting
 ============================================================
 
 Recommended Project Settings
 ------------------------------------------------------------
 
-The 'Recommended Project Settings' window found through the '8i' menu at the top of the Unity Editor offers tips and potential automatic fixes for common compatibility issues with your Project's settings.
+The 'Recommended Project Settings' window can found through the '8i' menu at the top of the Unity Editor.
+
+This window will prompt you if it detects an issue with your project settings, it can also fix common problems with a single click.
 
 Cannot create HVR components
 ------------------------------------------------------------
 
-- Check that the plugin was fully extracted from the '8i Unity Plugin' zip.
+- Check that the plugin was fully extracted from the '8i Unity Plugin' zip into your Project's Asset folder
+- Check the Recommended Project Settings window for help ( Found under the '8i/Recommended Project Settings' menu at the top of the Unity Editor )
 - If you recently updated the plugin, make sure that you closed the Unity Editor adding the new plugin folder to your project. The Unity Editor can lock the native binaries included in the plugin and block you from writing over them.
 - Make sure the Unity version is compatible with this version of the plugin.
 - Check the console to see whether there are any errors blocking Unity from compiling the plugin.
@@ -78,6 +80,9 @@ HVR Actors are not rendering
 
 - The Main Camera does not have a HvrRender component attached
     A common mistake is to not attach a HvrRender component to the main rendering camera in the scene
+
+- My HvrActor Prefabs are not rendering
+    Please see the `HvrDataBuildInclude <Components/HvrDataBuildInclude.html>`_ component page for more information about this problem.
 
 **Android**
 
