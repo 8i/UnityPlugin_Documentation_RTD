@@ -65,7 +65,7 @@ For example:
         # Code
     END_METAL_VERTEX
 
-Shader Subroutine Syntax and Structure
+Syntax and Structure
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Shader subroutines can control several properties of HvrActor rendering.
@@ -136,7 +136,7 @@ This takes the form of a comma-separated list of function names in parentheses: 
 
 Helper or utility functions without input or output semantics should **not** be declared in the code block header.
 
-Shader Parameters
+Parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Most shader subroutines are likely to need parameters provided by the application; for example, the current time, in
@@ -190,7 +190,7 @@ For Metal, textures should be declared in a separate ``struct`` and used with th
         return textures._<ID>RGLookupTable.sample(textureSampler, colour.rg);
     }
 
-Shader Subroutine Stacks
+Stacks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In order to support shader subroutine stacks, it is required to prefix all custom parameters and methods with "<ID>" (without the quote marks).
