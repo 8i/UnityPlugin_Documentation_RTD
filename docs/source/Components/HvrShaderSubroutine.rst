@@ -3,11 +3,18 @@ HvrShaderSubroutine
 
 This component allows custom shaders to affect the HvrActor during the native plugin rendering step. This allows for complex effects to be written to affect the color, position and size of each voxel.
 
+A HvrShaderSubroutine component can be though of like Unity's material system. Where you have a shader with some values that can be changed and this changes how a mesh renders.
+
+In the case of HvrShaderSubroutines, the shader suborutine code is executed as a post process step during the native rendering of the voxels. 
+
+Multiple HvrShaderSubroutine components can be added to a HvrActor in order to apply multiple post processing effects. The order which each subroutine executes is based on the order of the component as it is attached to the HvrActor's GameObject from top to bottom. This is known as a _stack_.
+
+
+
 .. note::
     Not all examples in the below documentation have been written for all of the supported shader languages.
 
     You may be required to modify the shader code for your specific target platform.
-
 
 Writing Shader Subroutines
 ------------------------------------------------------------
@@ -16,17 +23,17 @@ Unlike Unity's ShaderLab shaders, shader subroutines are not automatically conve
 
 The current supported shader languages are GLSL, HLSL and Metal.
 
-==================   ===============
+==================   =============================================
 Graphics API         Shader Language
-==================   ===============
+==================   =============================================
 Direct3D11           HLSL
 OpenGLCore           GLSL
 OpenGLES3            GLSL
 Metal                Metal Shading Language
-==================   ===============
+==================   =============================================
 
 Code Blocks
-^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 For convenience, a single shader subroutine file can contain all of the different shader languages. When the file is loaded it will only compile the relevant sections.
 
@@ -57,7 +64,7 @@ For example:
     END_METAL_VERTEX
 
 Shader Subroutine Syntax and Structure
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Shader subroutines can control several properties of HvrActor rendering.
 
@@ -128,7 +135,7 @@ This takes the form of a comma-separated list of function names in parentheses: 
 Helper or utility functions without input or output semantics should **not** be declared in the code block header.
 
 Shader Parameters
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Most shader subroutines are likely to need parameters provided by the application; for example, the current time, in
 effects that are dynamic or animated. These correspond to ``uniform`` variables in GLSL and constant buffers in HLSL.
@@ -182,13 +189,13 @@ For Metal, textures should be declared in a separate ``struct`` and used with th
     }
 
 Shader Subroutine Stacks
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In order to support shader subroutine stacks, it is required to prefix all custom parameters and methods with "<ID>" (without the quote marks).
 
-This is necessary because when a shader subroutine stack is created, all of the shaders in the stack are compiled into one large shader. If more than one of those shaders has a parameter with the same name, the parameter's value will not be able to be set differently for each shader. For example, if two shaders had the parameter "colour".
+This is necessary because when a shader subroutine stack is created, all of the shaders in the stack are compiled into one large shader. If more than one of those shaders has a parameter with the same name, the parameter's value will not be able to be set differently for each shader. For example, if two shaders had the parameter "colour" when you try to set each to a different value it would affect both paramters in the shader.
 
-In order to address this, a unique ID is generated for each file and is used when the shader subroutine stack is created. This ID is used to replace the "<ID>" prefix and ensures that each shader has unique parameter and method names;
+In order to address this, a unique ID is generated for each file and is used when the shader subroutine stack is created. This ID is used to replace the "<ID>" prefix and ensures that each shader has unique parameter and method names.
 
 This example demonstrates how to write a shader which is compatible with shader subroutine stacks.
 
