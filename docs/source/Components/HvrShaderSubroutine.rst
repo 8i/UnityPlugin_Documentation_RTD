@@ -31,7 +31,7 @@ Graphics API         Shader Language                                 Language Re
 Direct3D11           HLSL                                            `Windows HLSL Shader Reference <https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl-reference>`_
 OpenGLCore           GLSL                                            `OpenGL Reference <https://www.khronos.org/registry/OpenGL-Refpages/gl4/>`_
 OpenGLES3            GLSL                                            `OpenGLES Reference <https://www.khronos.org/opengles/sdk/docs/manglsl/docbook4/>`_
-Metal                Metal Shading Language                          `Apple Metal Shader Specification <https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf/>`_                          
+Metal                Metal Shading Language                          `Apple Metal Shader Specification <https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf/>`_
 ==================   =============================================   =============================================
 
 Code Blocks
