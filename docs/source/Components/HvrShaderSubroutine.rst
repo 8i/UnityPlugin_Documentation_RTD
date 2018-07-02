@@ -7,7 +7,7 @@ A HvrShaderSubroutine component can be though of like Unity's material system. W
 
 In the case of HvrShaderSubroutines, the shader suborutine code is executed as a post process step during the native rendering of the voxels. 
 
-Multiple HvrShaderSubroutine components can be added to a HvrActor in order to apply multiple post processing effects. The order which each subroutine executes is based on the order of the component as it is attached to the HvrActor's GameObject from top to bottom. This is known as a _stack_.
+Multiple HvrShaderSubroutine components can be added to a HvrActor in order to apply multiple post processing effects. The order which each subroutine executes is based on the order of the component as it is attached to the HvrActor's GameObject from top to bottom. This is known as a *stack*.
 
 
 
