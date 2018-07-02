@@ -8,6 +8,8 @@ Download
 
 Download the 8i Unity Plugin from https://8i.com/developers/unity/
 
+Previous versions can be found in the `Archive <https://drive.google.com/drive/u/0/folders/0B-1RcaY7OypbVmdXSy02c0J3czA>`_ 
+
 Install
 ------------------------------------------------------------
 
