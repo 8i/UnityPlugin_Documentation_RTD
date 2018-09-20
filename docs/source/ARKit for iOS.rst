@@ -4,15 +4,21 @@ ARKit Integration Tutorial
 Prerequisites
 -------------
 - iOS devices that support ARKit and Metal and run *iOS 11.3* or later, see `here, <https://developer.apple.com/library/archive/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/DeviceCompatibilityMatrix/DeviceCompatibilityMatrix.html>`_
+	- If you want to run ARKit 2.0, you need an iOS 12 device.
 - Mac installed latest macOS,
 - *Unity 2017.1* or later,
 - *Xcode 9.3* or later, with command line tools installed, see `here. <http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/>`_
+	- If you want to run ARKit 2.0, you need Xcode 10 or later.
 - Do some reading at `https://developer.apple.com/documentation/arkit/understanding_augmented_reality <https://developer.apple.com/documentation/arkit/understanding_augmented_reality>`_ and get a high level idea of how AR works on iOS.
 
 Getting Unity ARKit plugin
 --------------------------
 - Go to `https://bitbucket.org/Unity-Technologies/unity-arkit-plugin <https://bitbucket.org/Unity-Technologies/unity-arkit-plugin>`_ and download the official Unity ARKit plugin. You might need to install Mercurial or SourceTree to grab the source.
-- Switch to v1.5.0 tag if you want it to run on iOS 11 devices.
+- Switch to *1.5.1* tag if you want it to run on iOS 11 devices. Here's how you do it in SourceTree but could be different if you use other Mercurial client:
+
+.. image:: images/switch-to-1.5.1.png
+	:width: 500px
+
 - Within the downloaded project, extract 8i Unity Plugin into the **Asset** folder, as stated in :ref:`Installation` section.
 - You should have the directory structure like that: 
 
@@ -63,7 +69,7 @@ Seems pretty empty? That's because this is a barebone template of an AR app and 
 .. image:: images/inspector-hvractor.png
 	:width: 500px
 
-- There are a few options to note but for now we will just focus on the Asset/Data/Reference field. This is the data source that 8i's hologram engine will read from. To specify a valid file reference, we can go to folder 8i/examples/assets/hvr, and find "president" folder:
+- There are a few options to note but for now we will just focus on the Asset/Data/Reference field. This is the data source that 8i's hologram engine will read from. As you can see, right now it's empty. To specify a valid file reference, we can go to folder 8i/examples/assets/hvr, and find "president" folder:
 
 .. image:: images/where-is-president.png
 	:width: 500px
@@ -118,12 +124,12 @@ But that's not about it! Without proper configured camera, you can only view the
 
 Export and Build
 ----------------
-Now that's it! Simple as. It's time to export Xcode projectand deploy it to the device.
+That's it! Simple as. It's time to export Xcode projectand deploy it to the device.
 
 - Menu File > Build Settings, click *Player Settings* and make sure Metal is the first listed in the Inspector window.
 - Click Build, select a folder to export the project. If everything went smooth, a Finder window should pop up and shows the exported Xcode project.
 - Double click *Unity-iPhone.xcodeproj* and this should bring up Xcode.
-- Configure Xcode project as follows and hit run:
+- Configure Xcode project as follows. You need to pay attention to code signing `if you are new to it <https://help.apple.com/xcode/mac/current/#/dev60b6fbbc7>`_. After configuration, hit run:
 
 .. image:: images/xcode-settings.png
 	:width: 500px
@@ -132,4 +138,7 @@ Now that's it! Simple as. It's time to export Xcode projectand deploy it to the 
 
 Where to go from now on
 -----------------------
-- Check out our documentation on all the components and how they interact with each other.
+- Check out our documentation on all the :ref:`Components` and how they interact with each other.
+- Try out :ref:`Examples` in both 8i plugin and Unity ARKit plugin.
+- Take a look at Apple HIG on AR: `https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/augmented-reality/ <https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/augmented-reality/>`_.
+- Download 8i holograms from `https://8i.com/developers/downloads/ <https://8i.com/developers/downloads/>`_.
