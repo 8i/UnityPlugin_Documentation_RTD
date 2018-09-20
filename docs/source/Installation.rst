@@ -1,5 +1,7 @@
+.. _Installation:
+
 Installation
-=========
+============
 
 Download
 --------
