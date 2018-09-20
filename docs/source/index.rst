@@ -9,6 +9,7 @@ Contents:
    About
    Installation
    Quick Start
+   Tutorials
    Components/index
    Examples
    Platform Support/index
