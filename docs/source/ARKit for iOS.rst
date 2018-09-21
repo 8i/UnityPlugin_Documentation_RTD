@@ -122,6 +122,38 @@ But that's not about it! Without proper configured camera, you can only view the
 
 - Save the scene by pressing Cmd+S.
 
+Include .hvr/.hvrs Data
+-----------------------
+Before we can export the project, there's an extra step to do. Because we are using a *prefab* which means it will be dynamically loaded. We need to explicitly tell Unity to include the data before exporting.
+
+- First, right click on the Project window and create an asset of type HvrDataReference. You do it through Create > 8i > HvrDataReference.
+
+.. image:: images/create-datareference-asset.png
+	:width: 500px
+
+- After creation, select the asset. Drag the president folder to its data field.
+
+.. image:: images/drag-hvr-to-datareference.png
+	:width: 500px
+
+- Now we need to include this asset in our scene. Right click in Hierarchy window and create an empty GameObject.
+
+.. image:: images/create-empty.png
+	:width: 500px
+
+- With the empty object selected, we attach a component of type HvrDataBuildInclude. You can find it in Component > 8i > HvrDataBuildInclude.
+
+.. image:: images/attach-databuildinclude.png
+	:width: 500px
+
+- Finally drag the configured asset to Data Reference field.
+
+.. image:: images/assign-data-reference.png
+	:width: 500px
+
+- Save the scene by Cmd+S.
+
+
 Export and Build
 ----------------
 That's it! Simple as. It's time to export Xcode projectand deploy it to the device.
