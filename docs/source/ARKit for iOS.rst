@@ -10,7 +10,7 @@ Prerequisites
 - *Xcode 9.3* or later
 	- Command line tools installed, see `here. <http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/>`_
 	- ARKit 2.0 requires Xcode 10 or later
-- Get a high level idea of how AR works on iOS from Apple's documentation at `https://developer.apple.com/documentation/arkit/understanding_augmented_reality <https://developer.apple.com/documentation/arkit/understanding_augmented_reality>`_ 
+- Get a high level idea of how AR works on iOS from `Apple's documentation. <https://developer.apple.com/documentation/arkit/understanding_augmented_reality>`_ 
 
 Getting Unity ARKit plugin
 --------------------------
@@ -142,17 +142,17 @@ Before we can export the project, there's an extra step to do. Because we are us
 .. image:: images/drag-hvr-to-datareference.png
 	:width: 500px
 
-- Now we need to include this asset in our scene. Right click in Hierarchy window and create an empty GameObject.
+- Now we have created and configured the asset on disk. Now we need to include this asset in our scene. Right click in Hierarchy window and create an empty GameObject.
 
 .. image:: images/create-empty.png
 	:width: 500px
 
-- With the empty object selected, we attach a component of type HvrDataBuildInclude. You can find it in Component > 8i > HvrDataBuildInclude.
+- With the empty object selected, attach a component of type HvrDataBuildInclude. You can find it in Component > 8i > HvrDataBuildInclude.
 
 .. image:: images/attach-databuildinclude.png
 	:width: 500px
 
-- Finally drag the configured asset to Data Reference field.
+- Finally drag the configured HvrDataReference asset to Data Reference field.
 
 .. image:: images/assign-data-reference.png
 	:width: 500px
