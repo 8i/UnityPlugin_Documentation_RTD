@@ -28,10 +28,6 @@ Getting Unity ARKit plugin
 Configure the Unity Project
 ---------------------------
 - Open the project in Unity. If you are prompt with if project needs to be upgrade to the current Unity version, then click Yes.
-- If a 8i Project Tips warning pops up, click *Ignore All* for now.
-
-.. image:: images/ignore-8i-project-tips.png
-	:width: 500px
 
 - Select File > Build Settings, a build dialogue should come up. In *Platform* choose iOS and click *Switch Platform* button. Make sure the *Platform* is switched to iOS, and choose one of the scene as into the build. In this tutorial, we checked the simplest scene *UnityARBallz*.
 
