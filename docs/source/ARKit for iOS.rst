@@ -100,12 +100,12 @@ Make sure HvrActor is currently selected. Drag HvrActor object down to a folder 
 	:width: 500px
 
 To change the ARKit code to spawn *HvrActor*s instead of balls, find *BallMaker* object in the scene and select it.
-Drag the newly created prefab *HvrActor8 to *BallMaker*'s Inspector panel, replace *BallPrefab* with *HvrActor*:
+Drag the newly created prefab *HvrActor* to *BallMaker*'s Inspector panel, replace *BallPrefab* with *HvrActor*:
 
 .. image:: images/replace-ballmaker-with-hvractor.png
 	:width: 500px
 
-Now it's save to delete the HvrActor in the scene as we already have one prefab on the disk. Go to Hierarchy and right click on HvrActor, which should has its name in blue colour, and choose "Delete".
+Now it's safe to delete the HvrActor in the scene as we already have one prefab on the disk. Go to Hierarchy and right click on HvrActor, which should has its name in blue colour, and choose "Delete".
 
 .. image:: images/delete-template-hvractor.png
 	:width: 500px
