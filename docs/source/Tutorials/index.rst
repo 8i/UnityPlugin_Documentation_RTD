@@ -7,5 +7,5 @@ In this section, we will go through two AR solutions provided by Apple on iOS, a
 .. toctree::
 	:maxdepth: 1
 
-	ARKit for iOS
-	ARCore for Android
+	arkit
+	arcore
