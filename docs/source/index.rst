@@ -14,4 +14,5 @@ The 8i Unity Plugin allows developers to add 8i’s fully volumetric video to an
    Platform Support/index
    Components/index
    Troubleshooting
+   Tutorials
    Support
