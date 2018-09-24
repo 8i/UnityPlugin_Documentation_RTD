@@ -68,8 +68,10 @@ Configure the Unity Project
 
 - Still in Build Settings dialogue, click *Player Settings...* button. A PlayerSettings inspector should appear. In the Inspector window, a few fields need to be configured:
 	- Other Settings - Package Name: set to an reversed DNS like name, e.g. com.yourcompany.arsample
-	- Other Settings - Minimal API Level: set to Android 7.0 or higher
-	- Other Settings - Target API Level: set to Android 7.0 or higher
+	- Other Settings - Uncheck Auto Graphics API and explicitly set OpenGL ES 3 as the graphics API
+	- Other Settings - Multithreaded Rendering: uncheck
+	- Other Settings - Minimal API Level: set to Android 7.0 or higher. Note you need to have the right version of Android SDK installed and configured in Unity > Preference.
+	- Other Settings - Target API Level: set to Android 7.0 or higher. Note you need to have the right version of Android SDK installed and configured in Unity > Preference.
 	- XR Settings - ARCore Supported: tick on
 
 .. image:: images/android-build-settings-other-settings.png
