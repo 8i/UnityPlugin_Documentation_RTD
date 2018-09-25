@@ -22,15 +22,15 @@ Download `ARCore SDK for Unity 1.4.0 or later <https://github.com/google-ar/arco
 
 Open Unity and create a new empty 3D project
 
-  .. image:: images/android-new-project.png
+  .. image:: ../images/android-new-project.png
 
 Select Assets > Import Package > Custom Package, use the downloaded arcore-unity-sdk-v1.4.0.unitypackage from your disk. 
 
-  .. image:: images/android-import-package.png
+  .. image:: ../images/android-import-package.png
 
 In the import dialogue, make sure everything is selected and click *Import*.
 
-  .. image:: images/android-import-package-dialogue.png
+  .. image:: ../images/android-import-package-dialogue.png
 
 Accept any API upgrades if prompted.
 
@@ -40,11 +40,11 @@ Within the newly created project, extract 8i Unity Plugin into the **Asset** fol
 
 You should have the directory structure like this: 
 
-  .. image:: images/android-after-8i-project-structure.png
+  .. image:: ../images/android-after-8i-project-structure.png
 
 Fix any warning poped up in 8i Project Tips window, including *Android Unpack Scene*.
 
-  .. image:: images/android-project-tips-warning.png
+  .. image:: ../images/android-project-tips-warning.png
 
 
 Configure the Unity Project
@@ -56,18 +56,18 @@ If you are prompted to upgrade the Unity version, click yes.
 
 Open scene HelloAR by double clicking Assets/GoogleARCore/Examples/HelloAR/Scenes/HelloAR
 
-  .. image:: images/android-helloar-scene.png
+  .. image:: ../images/android-helloar-scene.png
 
 Select File > Build Settings, a build dialogue should come up. click *Player Settings...* button. A PlayerSettings inspector should appear. In the Inspector window, find Other Settings - *Metal Editor Support* and unchecked it. This is important for Unity previewing 8i's hologram content.
 
-  .. image:: images/android-build-settings-other-settings-metal-editor.png
+  .. image:: ../images/android-build-settings-other-settings-metal-editor.png
 
 
 Still in Build Settings dialogue, in *Platform* choose Android and click *Switch Platform* button.
 
 Make sure the *Platform* is switched to Android, and make sure HelloAR scene is ticked on by using *Add Open Scenes*.
 
-  .. image:: images/android-build-settings.png
+  .. image:: ../images/android-build-settings.png
 
 Still in Build Settings dialogue, click *Player Settings...* button. A PlayerSettings inspector should appear. In the Inspector window, a few fields need to be configured:
 
@@ -77,11 +77,11 @@ Still in Build Settings dialogue, click *Player Settings...* button. A PlayerSet
 * Other Settings - Minimal API Level: set to Android 7.0 or higher. Note you need to have the right version of Android SDK installed and configured in Unity > Preference.
 * Other Settings - Target API Level: set to Android 7.0 or higher. Note you need to have the right version of Android SDK installed and configured in Unity > Preference.
 
-  .. image:: images/android-build-settings-other-settings.png
+  .. image:: ../images/android-build-settings-other-settings.png
 
 * XR Settings - ARCore Supported: tick on
 
-  .. image:: images/android-build-settings-xr-settings.png
+  .. image:: ../images/android-build-settings-xr-settings.png
 
 
 Your First 8i Hologram
@@ -94,7 +94,7 @@ To open the scene, find the scene in project and double click the scene.
 
 Select menu GameObject > 8i > HvrActor. This will create an GameObject with a HvrActor component attached to it.
 
-  .. image:: images/android-creator-hvractor.png
+  .. image:: ../images/android-creator-hvractor.png
 
 Select the newly created *HvrActor* object.
 
@@ -102,17 +102,17 @@ There are a few options to note but for now we will just focus on the Asset/Data
 
 This is the data source that 8i's hologram engine will read from. As you can see, right now it's empty. To specify a valid file reference, we can go to folder 8i/examples/assets/hvr, and find "president" folder:
 
-  .. image:: images/inspector-hvractor.png
+  .. image:: ../images/inspector-hvractor.png
 
-  .. image:: images/android-where-is-president.png
+  .. image:: ../images/android-where-is-president.png
 
 Drag this "president" folder to Asset/Data/Reference field in Inspector panel. To make things even simpler, uncheck the Rendering/Lighting/Use Lighting checkbox:
 
-  .. image:: images/inspector-hvractor-president.png
+  .. image:: ../images/inspector-hvractor-president.png
 
 You should be able to see the hologram has already been shown in the Scene view:
 
-  .. image:: images/android-sceneview-president.png
+  .. image:: ../images/android-sceneview-president.png
 
 Making A Prefab
 ------------------------------------------------------------
@@ -123,16 +123,16 @@ Because we want our user be able to drop the hologram whenever he touches the gr
 
 Making sure HvrActor is currently selected, drag the HvrActor object down to a folder in the Project window, Unity will automatically create a prefab for you, and you will see the name of HvrActor turns blue:
 
-  .. image:: images/android-make-prefab.png
+  .. image:: ../images/android-make-prefab.png
 
 To change the HelloAR scene to spawn *HvrActor* instead of Andy Android, find *Example Controller* object in the scene and select it.
 Drag the newly created prefab *HvrActor* to *Example Controller*'s Inspector panel, replace *Andy Plane Prefab* and *Andy Point Prefab* with *HvrActor*:
 
-  .. image:: images/android-specify-prefab.png
+  .. image:: ../images/android-specify-prefab.png
 
 Because we have stored the HvrActor in a prefab it is now safe to delete the HvrActor in the scene. Go to Hierarchy and right click on HvrActor, which should has its name in blue colour, and choose "Delete".
 
-  .. image:: images/android-delete-hvractor.png
+  .. image:: ../images/android-delete-hvractor.png
 
 Save the scene by pressing Cmd+S.
 
@@ -145,11 +145,11 @@ Next we need to configure the camera to let it render 8i's hologram.
 
 Find the camera object in Hierarchy > CameraParent > Main Camera and select it.
 
-  .. image:: images/android-first-person-camera.png
+  .. image:: ../images/android-first-person-camera.png
 
 With *First Person Camera* seleced, In menu choose Component > 8i > HvrRender, this should add a *HvrRender* component to the camera:
 
-  .. image:: images/android-attach-hvrrender.png
+  .. image:: ../images/android-attach-hvrrender.png
 
 Save the scene by pressing Cmd+S.
 
@@ -159,28 +159,28 @@ Before we can build the project, there's an extra step to do. Because we are usi
 
 First, right click on the Project window and create an asset of type HvrDataReference. You do it through Create > 8i > HvrDataReference.
 
-  .. image:: images/create-datareference-asset.png
+  .. image:: ../images/create-datareference-asset.png
 
 
 After creation, select the asset. Drag the president folder to its data field.
 
-  .. image:: images/android-specify-datareference.png
+  .. image:: ../images/android-specify-datareference.png
 
 Now we have created and configured the asset on disk. Now we need to include this asset in our scene. Right click in Hierarchy window and create an empty GameObject.
 
-  .. image:: images/android-create-empty.png
+  .. image:: ../images/android-create-empty.png
 
 With the empty object selected, attach a component of type HvrDataBuildInclude. You can find it in Component > 8i > HvrDataBuildInclude.
 
-  .. image:: images/android-attach-hvrdatabuildinclude.png
+  .. image:: ../images/android-attach-hvrdatabuildinclude.png
 
 Drag the configured HvrDataReference asset to Data Reference field.
 
-  .. image:: images/android-drag-hvrdatareference.png
+  .. image:: ../images/android-drag-hvrdatareference.png
 
 Finally, choose from menu 8i > Android > Prepare Build and click OK if a dialogue prompts. This will prepare and bake the content ready to be submit to Android device. Note this is an Android specific process whenever you changed the dynamic loaded 8i content. You don't have to do it if no 8i content changed between builds.
 
-  .. image:: images/android-prepare-build.png
+  .. image:: ../images/android-prepare-build.png
 
 
 Save the scene.
@@ -194,7 +194,7 @@ That's it! It's time to build an APK and deploy it to the device.
 - Menu File > Build Settings, click *Player Settings*.
 - Click *Build And Run*, select a folder to export the APK. If everything went smooth, you should be to see the APK get exported and automatically deployed to device.
 
-  .. image:: images/android-build-and-run.png
+  .. image:: ../images/android-build-and-run.png
 
 - Once the build is up and running, pick up your phone and walk around until a magenta ground is shown, which means you can put your holograms on.
 - Tap the white grid ground or blue dots to see how hologram works within AR world.
