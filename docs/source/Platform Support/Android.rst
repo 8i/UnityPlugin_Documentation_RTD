@@ -61,12 +61,12 @@ When creating a build, Unity will package any files that are placed within your 
 
 This feature is available through the "HvrUnpackingScene" scene included with the plugin.
 
-"HvrUnpackingScene" uses the "LoadingSceneManager" component to unpack the data from the built OBB file. When opened this scene will scan the runing build and will extract any files that need to be exported. Once complete it will automatically load the next scene. This component can be easily modified for your project if you want to customize how the data is unpacked.
+"HvrUnpackingScene" uses the "LoadingSceneManager" component to unpack the data from the built APK/OBB file. When opened this scene will scan the runing build and will extract any files that need to be exported. Once complete it will automatically load the next scene. This component can be easily modified for your project if you want to customize how the data is unpacked.
 
 This scene can be found at: "../8i/core/interface/platforms/android/scenes/".
 
 .. note::
-    It is required to enable 'Split Application Binary' (`Read More <https://docs.unity3d.com/Manual/android-OBBsupport.html>`_) to use this feature.
+    It is strongly recommended to enable 'Split Application Binary' (`Read More <https://docs.unity3d.com/Manual/android-OBBsupport.html>`_) to dodge the size limit placed by Google Play. Packing everything into one APK is allowed but not recommended.
 
 Google Play requirements
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
