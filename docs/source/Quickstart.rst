@@ -54,6 +54,7 @@ To enable VR for your Unity Project
 If you encounter any issues getting VR working in your Unity Project, please consult the Unity Manual
 `[Link to Unity Docs] <https://docs.unity3d.com/Manual/VROverview.html>`_
 
+Note: Android-based VR headsets like Google Daydream and Oculus Go are also supported. You may want to consult their own document on how to build an app in Unity.
 
 Building for AR
 ------------------------------------------------------------
