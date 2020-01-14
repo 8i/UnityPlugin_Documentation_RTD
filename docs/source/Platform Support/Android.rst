@@ -5,7 +5,7 @@ Support
 ------------------------------------------------------------
 
 ==================   ======================================================================================================
-Architecture         - ARMv7
+Architecture         - ARMv7, ARM64
 Graphics API         - OpenGLES3
 ==================   ======================================================================================================
 
@@ -13,18 +13,17 @@ Requirements
 ------------------------------------------------------------
 
 ==================   ======================================================================================================
-CPU                  - Requires ARMv7
-                     - Requires NEON (supported by almost all phones that are fast enough to run HVR content)
+CPU                  - Requires ARMv7 or ARM64
+                     - ARMv7 Requires NEON (supported by almost all phones that are fast enough to run HVR content)
 GPU                  - Requires OpenGLES3
 RAM                  - Recommended >512MB ( Requirements vary based on application and data quality )
-OS                   - Jelly Bean          4.1 – 4.3.1
-                     - KitKat              4.4 – 4.4.4
+OS                   - KitKat              4.4 – 4.4.4
                      - Lollipop            5.0 – 5.1.1
                      - Marshmallow         6.0 – 6.0.1
                      - Nougat              7.0 – 7.1.2
                      - Oreo                8.0 – 8.1
                      - Newer Versions
-Min Spec             - API Level 16 ( Jelly Bean )
+Min Spec             - API Level 19 ( KitKat  )
 ==================   ======================================================================================================
 
 
@@ -74,3 +73,9 @@ Google Play requirements
 The Google Play Store imposes a size limit of 100mb for APK files uploaded for distribution. To allow larger data to be shipped with an APK, Android supports OBB files, also known as Application Expansion Files (`Expansion Files <https://developer.android.com/google/play/expansion-files>`_)
 
 Unity also supports these files, via a player setting called "Split Application Binary". This option will export many of the project resources to an OBB, rather than packaging them with the APK. (`Split Application Binary <https://docs.unity3d.com/Manual/android-OBBsupport.html>`_)
+
+Google Play on 64-bit apps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Starting August 1, 2019, Google Play only allows apps have support of 64-bit architecture to be able to publish. That means developer can only choose Unity version that supports Android 64bit build. Only Unity 2018.3 and newer versions (as an exception, 2017.4 back-ported the ARM64 support)have good support of ARM64 so you want to stick with those versions.
+
+To build 64-bit app, you also need to change Unity runtime from Mono to compiled IL2cpp. See `here <https://blogs.unity3d.com/2019/03/05/android-support-update-64-bit-and-app-bundles-backported-to-2017-4-lts/>`_ for more information.

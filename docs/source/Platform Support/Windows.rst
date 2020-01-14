@@ -35,4 +35,7 @@ Min Spec             - Windows 7
 
 Building
 ------------------------------------------------------------
-There are no special required steps when creating a build. The project can be built using the default Unity Build menu.
+
+DLL initialisation
+~~~~~~~~~~~~~~~~~~
+You need to put 8i/core/platforms/common/scenes/HvrPluginInit.scene as the first scene in your build. You can also use 8i->Project Tips to help you.

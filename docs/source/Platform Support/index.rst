@@ -7,6 +7,5 @@ Platform Support
 
    Android
    iOS
-   Linux
    MacOS
    Windows

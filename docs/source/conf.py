@@ -53,7 +53,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'8iUnityPlugin'
-copyright = u'2018, 8i'
+copyright = u'2020, 8i'
 author = u'8i'
 
 # The version info for the project you're documenting, acts as replacement for

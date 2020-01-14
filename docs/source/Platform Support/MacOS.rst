@@ -7,6 +7,7 @@ Support
 ==================   ======================================================================================================
 Architecture         - x64
 Graphics API         - OpenGlCore
+                     - Metal
 ==================   ======================================================================================================
 
 Requirements
@@ -26,6 +27,7 @@ RAM                  - Recommended >2GB
 OS                   - El Capitan
                      - Sierra
                      - High Sierra
+                     - Mojave
 Min Spec             - El Capitan
                      - MacBook Pro (Retina, 13-inch, Mid 2014)
                      - 2.6GHz dual-core Intel Core i5 processor
@@ -36,4 +38,7 @@ Min Spec             - El Capitan
 
 Building
 ------------------------------------------------------------
-There are no special required steps when creating a build. The project can be built using the default Unity Build menu.
+
+DLL initialisation
+~~~~~~~~~~~~~~~~~~
+You need to put 8i/core/platforms/common/scenes/HvrPluginInit.scene as the first scene in your build. You can also use 8i->Project Tips to help you.
