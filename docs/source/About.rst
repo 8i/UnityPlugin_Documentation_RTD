@@ -4,9 +4,7 @@ About
 Download
 ------------------------------------------------------------
 
-Download the 8i Unity Plugin from https://8i.com/developers/unity/
-
-Previous versions can be found in the `Archive <https://drive.google.com/drive/u/0/folders/0B-1RcaY7OypbVmdXSy02c0J3czA>`_ 
+Download the 8i Unity Plugin. You should be getting a link from 8i after the purchase of stage, or you can ask your 8i contact to get one.
 
 Install
 ------------------------------------------------------------
@@ -28,8 +26,14 @@ Support
 - 5.4
 - 5.5
 - 5.6
-- 2017
-- 2018
+- 2017.1
+- 2017.2
+- 2017.3
+- 2017.4
+- 2018.1
+- 2018.2
+- 2018.3
+- 2018.4
 
 .. warning::
     Unity 2018.2 is currently not compatible when building for Android. This is a bug within Unity which will be fixed in a upcoming version.

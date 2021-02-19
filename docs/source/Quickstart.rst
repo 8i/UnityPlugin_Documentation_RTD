@@ -6,7 +6,7 @@ Quick Start
 Download and Installation
 ------------------------------------------------------------
 
-Download the 8i Unity Plugin from https://8i.com/developers/unity/
+Download the 8i Unity Plugin. You should be getting a link from 8i after the purchase of stage, or you can ask your 8i contact to get one.
 
 Once downloaded extract the ‘8i’ folder from the zip file into your project's Asset directory.
 
@@ -20,8 +20,7 @@ Before beginning, ensure that the HvrActor, HvrRender or HvrLight components are
 2. Drag and drop one of the folders contained under '8i/examples/assets/hvr/' onto the 'Reference' slot of the HvrActor
 3. Select the Main Camera in the scene
 4. Add the 'HvrRender' component
-5. Select the 'Directional Light' in the scene.
-6. Add the 'HvrLight' component
+5. Optionally, if you need lighting at the expense of speed: Select the 'Directional Light' in the scene, then add the 'HvrLight' component
 
 The HvrActor will now be rendering both the scene and game view.
 
@@ -55,6 +54,7 @@ To enable VR for your Unity Project
 If you encounter any issues getting VR working in your Unity Project, please consult the Unity Manual
 `[Link to Unity Docs] <https://docs.unity3d.com/Manual/VROverview.html>`_
 
+Note: Android-based VR headsets like Google Daydream and Oculus Go are also supported. You may want to consult their own document on how to build an app in Unity.
 
 Building for AR
 ------------------------------------------------------------

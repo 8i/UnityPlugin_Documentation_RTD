@@ -1,14 +1,10 @@
-Community and Support
+Technical Support
 ============================================================
-
-Zendesk
-------------------------------------------------------------
-
-`8isupport.zendesk.com <https://8isupport.zendesk.com/>`_
-
-Contact us through Zendesk if you have any issues, requests or questions.
 
 Email
 ------------------------------------------------------------
+`support@8i.com <support@8i.com/>`_ 
 
-`support@8isupport.zendesk.com <support@8isupport.zendesk.com/>`_ 
+Slack
+------------------------------------------------------------
+Please use the dedicated Slack channel given along with your purchase.

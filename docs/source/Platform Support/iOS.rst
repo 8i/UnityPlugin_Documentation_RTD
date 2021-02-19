@@ -5,7 +5,7 @@ Support
 ------------------------------------------------------------
 
 ==================   ======================================================================================================
-Architecture         - ARMv7
+Architecture         - ARM64
 Graphics API         - OpenGLES3
                      - Metal
 ==================   ======================================================================================================
@@ -14,15 +14,14 @@ Requirements
 ------------------------------------------------------------
 
 * A Mac is required to generate the XCode project
-* XCode 9.3 is the minimum required version
+* XCode should always be updated to the latest version
 
 ==================   ======================================================================================================
-CPU                  - Requires ARMv7
-                     - Requires NEON (supported by almost all phones that are fast enough to run HVR content)
+CPU                  - Requires ARM64
 GPU                  - Requires support for OpenGLES3 or Metal
 RAM                  - Recommended >512MB ( Requirements vary based on application and data quality )
-OS                   - iOS 11
-Min Spec             - iPhone 6
+OS                   - iOS 11 or newer
+Min Spec             - iPhone 7
 ==================   ======================================================================================================
 
 Building
