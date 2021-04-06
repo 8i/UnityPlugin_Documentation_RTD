@@ -23,17 +23,13 @@ Support
 
 **Supported Unity Versions** 
 
-- 5.4
-- 5.5
-- 5.6
-- 2017.1
-- 2017.2
-- 2017.3
-- 2017.4
 - 2018.1
 - 2018.2
 - 2018.3
 - 2018.4
+- 2019.1
+- 2019.2 (except iOS)
+- 2019.3
 
 .. warning::
     Unity 2018.2 is currently not compatible when building for Android. This is a bug within Unity which will be fixed in a upcoming version.
