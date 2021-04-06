@@ -14,6 +14,7 @@ PatAsset
     - uri: The web hosted URL that would otherwise be used in direct streaming
     - localDir: Local OS folder path to store the downloaded asset. Where appropriate on mobile platforms, permissions may need to be requested and granted by the user.
     - newUri: On successful download, the returned path to the local manifest file which can be used as the input to PatActor.SetAssetDataUrl()
+    - quality: Toggle to download the highest or lowest quality content representation (defaults to highest)
 
 - GetRepresentations
     This allows for enumeration of available PatPlayerRepresentation objects per audio/video/mesh type. Primarily, video representation is used to provide different levels of bandwidth/quality.

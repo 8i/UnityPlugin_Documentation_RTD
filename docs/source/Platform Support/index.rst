@@ -14,7 +14,7 @@ Both codecs are supported on mobile targets, however, PAT only supports in-edito
 +-----------+-----------+----------+
 | MacOS     | Yes       | No       |
 +-----------+-----------+----------+
-| Windows   | Yes       | No       |
+| Windows   | Yes       | Yes      |
 +-----------+-----------+----------+
 
 .. toctree::
