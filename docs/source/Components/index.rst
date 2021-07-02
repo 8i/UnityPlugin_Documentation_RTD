@@ -56,7 +56,44 @@ PAT Components
 
 | The easiest way to instantiate a PAT playback object is via the example PatActor prefab.
 | There are example PAT scenes in 8i/examples/scenes that provide the best starting point.
+**What is PAT**
 
+
+PAT is the latest codec developed by 8i. PAT is a mesh based codec, in which the final
+asset output is represented as a sequence of textured meshes
+
+**Output from PAT**
+
+The PAT codec produces several outputs. Its important to understand that the outputs
+are simply a different encapsulation around the same output data. The available outputs are:
+    MPD - This format extends the well known MPEG-DASH and HLS standards. This format should be used
+    for all applications that require streaming and playback that is longer than a few seconds.
+
+    glTF - This output can be used in standard editors/players and social platforms. glTF is widely adopted format, particularly suitable for the web.
+    However, this format performs poorly for longer content where progressive streaming is required.
+
+    FBX - This output is primarily used for cases where the output needs to be edited using
+    tools like Maya. After editing, this format can be converted to any of the other formats.
+
+**Difference from HVR**
+
+The main difference between HVR and PAT is how the underlying 3D asset is represented.
+HVR takes the approach of representing the 3D asset as a point cloud. However, PAT represents the asset as a textured mesh.
+Effectively, PAT decouples the mesh(geometry) resolution from the texture(color) resolution. Allowing us to scale up the asset perceived resolution, with smaller increase in overall asset size.
+To illustrate it, think of an actor with a very textured shirt, the underlying geometry of the shirt is fairly simple, allowing us to save a lot of geometry bandwidth. In this case most the complexity is on the texture side, which we can very effectively encode using standard video codecs.
+The represent the high details with HVR, we will need a very high resolution of points, causing the file size to explode.
+
+**Unity usage with Unity**
+
+HVR is using a point cloud to reprensent the data. Point clouds are less standatd and hence Unity doesnt do as good job rendering them.
+As a result, to produce the best quality render, the HVR plugin takes over the rendering of the asset. This internal rendering takes away some of feature set that a developer would expect with a 3D asset in Unity.
+In contrast, PAT simply delivers a mesh and a texture per frame, giving the developer back the control over rendering and 3D asset manipulation and effects.
+
+**PAT with webplayer**
+
+**PAT with 8thwall**
+
+We integrated
 **Main Script Components**
 
 .. toctree::
