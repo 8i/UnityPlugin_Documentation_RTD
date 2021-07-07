@@ -1,3 +1,5 @@
+:orphan:
+
 MPD structure
 ============================================================
 
@@ -14,5 +16,5 @@ MPD structure
 * master_15.m3u8 - Manifest file for HLS streaming for 15 FPS variant of the texture data
 * master_30.m3u8 - Manifest file for HLS streaming for the 30 FPS variant of the texture data
 * init.mp4 - the init segment of the chunked data
-* *.m4s - chunks of the video/mesh data
+* \*.m4s - chunks of data
 * playlist.m3u8 - per representation HLS file describing the init file and chunks

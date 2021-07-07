@@ -53,12 +53,7 @@ Unity's manual demonstrates how components are used: https://docs.unity3d.com/Ma
 
 PAT Components
 ------------------------------------------------------------
-
-| The easiest way to instantiate a PAT playback object is via the example PatActor prefab.
-| There are example PAT scenes in 8i/examples/scenes that provide the best starting point.
-
 **What is PAT**
-
 
 PAT is the latest codec developed by 8i. PAT is a mesh based codec, in which the final
 asset output is represented as a sequence of textured meshes
@@ -67,6 +62,7 @@ asset output is represented as a sequence of textured meshes
 
 The PAT codec produces several outputs. It's important to understand that the outputs
 are simply a different encapsulation around the same output data. The available outputs are:
+
     * MPD - This format extends the well known MPEG-DASH and HLS standards. This format should be used
       for all applications that require streaming and playback that is longer than a few seconds.
       More info about an MPD structure can be found in the `MPD structure <Mpd.html>`_ document
@@ -89,13 +85,10 @@ The represent the high details with HVR, we will need a very high resolution of 
 
 HVR is using a point cloud to represent the data. Point clouds are less standard and hence Unity's standard rendering will not produce the best output to the user.
 As a result, to produce the best quality render, the HVR plugin takes over the rendering of the asset. This internal rendering takes away some of feature set that a developer would expect with a 3D asset in Unity.
-In contrast, PAT simply delivers a mesh and a texture per frame, giving the developer back the control over rendering and 3D asset manipulation and effects.
+In contrast, PAT simply delivers a mesh and a texture per frame, giving back the control over rendering and 3D asset manipulation and effects to the developer.
 
-**PAT with webplayer and 8thwall**
-
-
-PAT MPD assets can be streamed and played on the browser. Additional information about usage of the web player can be found here:
-https://8i.github.io/embeddable_webplayer/#/
+| The easiest way to instantiate a PAT playback object is via the example PatActor prefab.
+| There are example PAT scenes in 8i/examples/scenes that provide the best starting point.
 
 **Main Script Components**
 
@@ -114,4 +107,9 @@ https://8i.github.io/embeddable_webplayer/#/
    :titlesonly:
 
    PatStreamPlayer
+
+**PAT with webplayer and 8thwall**
+
+PAT MPD assets can be streamed and played on the browser. Additional information about usage of the web player can be found here:
+https://8i.github.io/embeddable_webplayer/#/
 
