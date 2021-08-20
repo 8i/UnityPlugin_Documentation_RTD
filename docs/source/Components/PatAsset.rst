@@ -10,12 +10,15 @@ PatAsset
     | If used manually, it needs to be called prior to Create()
 
 - Download
-    This can be used to download a PAT asset for local playback with the following fields:
+    This can be used to download a PAT asset for local playback with a PatPlayer.DownloadParams struct containing the following fields, and an output newUri:
 
-    - uri: The web hosted URL that would otherwise be used in direct streaming
-    - localDir: Local OS folder path to store the downloaded asset. Where appropriate on mobile platforms, permissions may need to be requested and granted by the user.
+    - DownloadParams:
+        - Uri: The web hosted URL that would otherwise be used in direct streaming
+        - LocalDir: Local OS folder path to store the downloaded asset. Where appropriate on mobile platforms, permissions may need to be requested and granted by the user.
+        - Quality: Toggle to download the highest, medium or lowest quality content representation. Usually meaning 2048, 1024 and 512 texture resolutions respectively.
+        - EncryptionKey: Set to encryption key as needed, otherwise should be null.
+        - EncryptionKid: Set to encryption kid as needed, otherwise should be null.
     - newUri: On successful download, the returned path to the local manifest file which can be used as the input to PatActor.SetAssetDataUrl()
-    - quality: Toggle to download the highest, medium or lowest quality content representation (defaults to highest)
 
 - GetRepresentations
     This allows for enumeration of available PatPlayerRepresentation objects per audio/video/mesh type. Primarily, video representation is used to provide different levels of bandwidth/quality.
