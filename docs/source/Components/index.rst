@@ -98,6 +98,7 @@ In contrast, PAT simply delivers a mesh and a texture per frame, giving back the
    PatActor
    PatAsset
    PatAudioRender
+   PatDownloader
    PatPlayerRepresentation
    PatRender
 
