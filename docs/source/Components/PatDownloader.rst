@@ -24,3 +24,9 @@ PatDownloader
     - success: Denotes whether the download completed successfully
     - newUri: On successful download, the returned path to the local manifest file which can be used as the input to PatActor.SetAssetDataUrl()
 
+- OnDownloadProgress callback:
+    The callback is executed on a background thread, so much of the Unity API is unavailable.
+    Returns the latest download progress percentage
+
+    - progressPercentage: progress percentage value, 0-100
+
