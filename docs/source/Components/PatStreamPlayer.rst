@@ -8,10 +8,14 @@ Parameters
 ------------------------------------------------------------
 
 +----------------+-----------------------------------------------------------------------------------------------------------+
-| AssetUrl       | URL to the cloud hosted manifest                                                                          |
+| AssetUrl           | URL to the cloud hosted manifest                                                                      |
 +----------------+-----------------------------------------------------------------------------------------------------------+
-| PatActorPrefab | Should be set to the provided PatActor.prefab                                                             |
+| PatActorPrefab     | Should be set to the provided PatActor.prefab                                                         |
 +----------------+-----------------------------------------------------------------------------------------------------------+
-| DownloadAsset  | Controls whether the asset should first be downloaded, or streamed directly from the web                  |
+| DownloadAsset      | Controls whether the asset should first be downloaded, or streamed directly from the web              |
++----------------+-----------------------------------------------------------------------------------------------------------+
+| OnTriggerSeek      | On touch or space key, trigger seek to half of current playout time                                   |
++----------------+-----------------------------------------------------------------------------------------------------------+
+| OnTriggerRepSwitch | On touch or space key, trigger cycling to the next video representation (streaming only)              |
 +----------------+-----------------------------------------------------------------------------------------------------------+
 
