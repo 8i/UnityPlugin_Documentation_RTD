@@ -23,17 +23,8 @@ Support
 
 **Supported Unity Versions** 
 
-- 2018.1
-- 2018.2
-- 2018.3
-- 2018.4
-- 2019.1
-- 2019.2 (except iOS)
-- 2019.3
-
-.. warning::
-    Unity 2018.2 is currently not compatible when building for Android. This is a bug within Unity which will be fixed in a upcoming version.
-    This bug will be seen as the HvrActor rendering over a black background with the Unity scene not being visible.
+- 2018.4 (LTS)
+- 2019.4 (LTS)
 
 .. note:: 
     For more details on each platform see the individual pages in Platform Support
