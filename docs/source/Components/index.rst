@@ -99,6 +99,7 @@ In contrast, PAT simply delivers a mesh and a texture per frame, giving back the
    PatAsset
    PatAudioRender
    PatDownloader
+   PatLiveManager
    PatPlayerRepresentation
    PatRender
 
@@ -108,6 +109,7 @@ In contrast, PAT simply delivers a mesh and a texture per frame, giving back the
    :titlesonly:
 
    PatStreamPlayer
+   PatLiveAsgardPlayer
 
 **PAT with webplayer and 8thwall**
 
