@@ -25,6 +25,7 @@ Support
 
 - 2018.4 (LTS)
 - 2019.4 (LTS)
+- 2020.3 (LTS)
 
 .. note:: 
     For more details on each platform see the individual pages in Platform Support
