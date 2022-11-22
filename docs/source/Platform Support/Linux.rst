@@ -18,8 +18,7 @@ CPU                  - Intel and AMD
 GPU                  - ATi and Nvidia
                      - Requires OpenGL 4.1 or D3D 11.1
 RAM                  - Recommended >2GB ( Requirements vary based on application and data quality )
-OS                   - Ubuntu 16.04
-                     - Ubuntu 17.10
+OS                   - Ubuntu 19.04+
 Min Spec             - Intel Core2 Quad CPU Q6600 @ 2.4 GHz
                      - 4GB Ram
                      - Nvidia 970 or equivalent ( For VR )
