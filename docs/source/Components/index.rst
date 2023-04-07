@@ -90,6 +90,21 @@ In contrast, PAT simply delivers a mesh and a texture per frame, giving back the
 | The easiest way to instantiate a PAT playback object is via the example PatActor prefab.
 | There are example PAT scenes in 8i/examples/scenes that provide the best starting point.
 
+**PAT usage with Timeline**
+
+| PAT playback supports usage with Unity's Timeline system starting with Unity 2020.
+| See the example scene in 8i/examples/scenes/Example-PAT-Timeline.unity for a sample integration.
+
+.. toctree::
+   :titlesonly:
+
+   PatTimelineProperties
+   PatTrackRenderer
+   PatActor_AssetBehavior
+   PatActor_AssetTrack
+   PatActor_ClipMixerBehavior
+   PatActor_PlayableAsset
+
 **Main Script Components**
 
 .. toctree::

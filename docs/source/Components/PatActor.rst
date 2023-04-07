@@ -7,7 +7,7 @@ PatActor
 | NOTE: Changing the below parameters must happen before the asset URL is set. Otherwise, the changes are ignored.
 
 - encryptionKey, encryptionKid: This pair should be set together when necessary. The fields should remain null when unused.
-- enableTextureHwDecode: Controls hardware texture decode enablement (Android only), hardware decode is enabled by default.
+- enableTextureHwDecode: Controls hardware texture decode enablement (Android, Windows and Linux only), hardware decode is enabled by default.
 - enableAudio: Controls audio playback enablement, enabled by default.
 - playbackSpeed: Controls playout speed. No restrictions with audio disabled, but with audio enabled, the resampled audio frequency needs to be between 6k and 384k. With 48k audio output, that allows for 8x slowdown or speedup.
 
